@@ -1,5 +1,5 @@
 body {
-  color: #000080;
+  color: #5CA4CA;
   background-color: #E1FFEE;
 }
 hr {
@@ -8,13 +8,33 @@ hr {
   border-width: 10%;
   width: 5%;
 }
-h1 {
-  color: #7FBCD2
+input[type="text"], textarea {
+  background-color : #FCF798;
+  border: solid #74D2FF medium;
 }
-h3 {
-  color: #7FBCD2
+input[type="email"], textarea {
+  background-color : #FCF798;
+  border: solid;
+  border-color: #74D2FF;
+  border-width: medium;
 }
 
-p {
-  color: #000080 
+input[type="submit"] {
+  background-color : #74D2FF;
+  border: solid;
+  border-width: thick;
+  border-radius: 50%;
+  border-color: #FCF798;
+  color: #E0FFF9;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-size: large;
 }
+pre {
+  font-family: 'Italianno', cursive;
+  font-size: 23px;
+}
+
+
