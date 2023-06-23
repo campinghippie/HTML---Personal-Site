@@ -62,5 +62,18 @@ pre {
   font-family: 'Italianno', cursive;
   font-size: 23px;
 }
+.honda {
+  margin: 5px;
+  padding: 20px;
+  background-color: #B81B0E;
+  color:#FFFFFF;
+}
+.CRF {
+  margin: 4px;
+  padding: 5px;
+  background-color: #FFFFFF;
+  color: #0047AB;
+  border: 7px solid #0047AB;
+}
 
 
