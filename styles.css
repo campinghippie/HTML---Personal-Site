@@ -1,6 +1,6 @@
 body {
-  color: #FDFEFE;
-  background-color: #AED6F1;
+  color: #FBFCFC;
+  background-color: #85C1E9;
 }
 figure {
   border: 10px #f7e98e outset;
@@ -121,20 +121,20 @@ pre {
   font-size: 26px;
   font-weight: bolder;
 }
-code {
+#angular {
   font-family: Cascadia Mono,"courier new";
   color: grey;
   background-color: #1B1B1C;
-  padding: 2px;
-  font-size: 105%;
+  padding: 1px;
+  font-size: 100%;
 
 }
-#angular {
+code {
   font-family: Cascadia Mono,"courier new";
-  color: #04D9FF;
+  color: #3498DB;
   background-color: #1B1B1C;
-  padding: 2px;
-  font-size: 105%;
+  padding: 1px;
+  font-size: 100%;
 }
 .enduro-honda {
   font-family: 'Fraunces', serif;
