@@ -1,11 +1,15 @@
 body {
-  color: #5CA4CA;
-  background-color: #E1FFEE;
+  color: #FDFEFE;
+  background-color: #AED6F1;
 }
 h1 {
   font-family: 'Neonderthaw', cursive;
   font-size: 78px;
-  text-shadow: 0 0 45px #74D2FF;
+  text-shadow: 0 0 45px #FFFF33;
+}
+h2 {
+  text-shadow: 0 0 30px #FFFF33;
+  font-family: 'Neonderthaw', cursive;
 }
 .tooltip {
   position: relative;
@@ -28,11 +32,37 @@ h1 {
 .tooltip:hover .tooltiptext {
   visibility: visible
 }
+::marker {
+  color: #5CA4CA; 
+  font-size: 18px;
+}
 hr {
   border-style: none;
-  border-top: 10px dotted #A5F1E9;
+  border-top: 10px dotted #5CA4CA;
   border-width: 10%;
   width: 5%;
+}
+a:link {
+  color: #FDFEFE;
+}
+a:visited {
+  color: #FCF3CF;
+}
+a:hover {
+  color: #FF6700;
+}
+a:active {
+  color: #39FF14;
+}
+fieldset {
+  border-style: none;
+  border: 10px inset #5CA4CA;
+  width: 5%;
+}
+.swimmingpool {
+  border-style: none;
+  border-top: 4px dotted #FF3131;
+  width: 1000px;
 }
 input[type="text"], textarea {
   background-color : #FCF798;
@@ -44,36 +74,92 @@ input[type="email"], textarea {
   border-color: #74D2FF;
   border-width: medium;
 }
+input[type="date"], textarea {
+  color: #74D2FF;
+  background-color : #FCF798;
+  border: solid #74D2FF medium;
+}
 
 input[type="submit"] {
   background-color : #74D2FF;
   border: solid;
   border-width: thick;
-  border-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
   border-color: #FCF798;
   color: #E0FFF9;
-  padding: 16px 32px;
+  padding: 18px 32px 18px 8px;
   text-decoration: none;
   margin: 4px 2px;
   cursor: pointer;
   font-size: large;
 }
 pre {
-  font-family: 'Italianno', cursive;
-  font-size: 23px;
+  color: #5CA4CA;
+  font-family: 'Ballet', cursive;
+  font-size: 26px;
+  font-weight: bolder;
+}
+code {
+  font-family: Cascadia Mono,"courier new";
+  color: grey;
+  background-color: #1B1B1C;
+  padding: 2px;
+  font-size: 105%;
+
+}
+#angular {
+  font-family: Cascadia Mono,"courier new";
+  color: #04D9FF;
+  background-color: #1B1B1C;
+  padding: 2px;
+  font-size: 105%;
+}
+.enduro-honda {
+  font-family: 'Fraunces', serif;
 }
 .honda {
-  margin: 5px;
-  padding: 20px;
+  margin: 10px;
+  padding: 30px;
   background-color: #B81B0E;
   color:#FFFFFF;
+  border: 10px solid  #00256b;
+}
+.honda > h3 {
+  padding-left: 32px;
+}
+  .honda > img {
+    padding-left: 32px;  
+  }
+.honda > audio {
+  padding-left: 32px;
 }
 .CRF {
-  margin: 4px;
-  padding: 5px;
+  margin: 15px;
+  padding: 15px;
   background-color: #FFFFFF;
-  color: #0047AB;
-  border: 7px solid #0047AB;
+  color: #00256b;
+  border: 8px solid  #00256b;
 }
+.CRF > h3::first-line {
+  color: #B81B0E;
+  font-size: xx-large;
+  font-style: italic;
+  text-decoration: underline overline #00256b 8px; 
+}
+.CRF1 {
+  font-family: 'Fraunces', serif;
+  margin: 15px;
+  padding: 15px;
+  background-color: #FFFFFF;
+  color: #00256b;
+  border: 8px solid #00256b;
+}
+.CRF1 > h3::first-letter {
+  color: #B81B0E;
+  font-size: xx-large;
+  font-style: italic;
+}
+
 
 
