@@ -2,6 +2,25 @@ body {
   color: #FDFEFE;
   background-color: #AED6F1;
 }
+figure {
+  border: 10px #f7e98e outset;
+  padding:30px;
+  margin: auto;
+  background-color: #ffd700;
+}
+#profilepic {
+  border: 5px #f7e98e inset;
+  border-radius:50%;
+}
+figcaption {
+  color: #B59410;
+  text-align: center;
+  border: 3px #f7e98e outset;
+  width: 15%;
+  margin: auto;
+  margin-top:15px;
+  border-radius: 50%;
+}
 h1 {
   font-family: 'Neonderthaw', cursive;
   font-size: 78px;
