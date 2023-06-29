@@ -10,15 +10,17 @@ figure {
 }
 #profilepic {
   border: 5px #f7e98e inset;
-  border-radius:50%;
+  border-radius: 50%;
 }
 figcaption {
   color: #B59410;
   text-align: center;
   border: 3px #f7e98e outset;
-  width: 15%;
-  margin: auto;
-  margin-top:15px;
+  width: 16%;
+  margin-top: 2%;
+  margin-bottom: 0%;
+  margin-right: 42%;
+  margin-left: 42%;
   border-radius: 50%;
 }
 h1 {
