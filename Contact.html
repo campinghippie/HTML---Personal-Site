@@ -3,7 +3,13 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="description" content="contact">
+  <meta name="keywords" content="contact, adress">
+  <meta name="author" content="Joost van Lierop">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>contact details Joost</title>
+  <link rel="icon" href="images/envelope-favicon.ico" sizes="any">
+  <link rel="icon" href="images/envelope-favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -26,22 +32,25 @@
   <hr>
 
   <p>
-    <!--If you know how to use the browser developer-tools, you see my e-mail adress below!-->
+    <!--You know how to use the browser developer-tools, if you want to offer me a job, see my e-mail adress below!-->
     <form action="mailto:joostvanlierop@gmail.com" method="post" enctype="text/plain">
       <fieldset>
-        <label>Name: </label>
-        <input type="text" name="your Name" cols="65"><br><br>
+        <label>First name: </label><br>
+        <input type="text" name="First name" cols="65"><br><br>
         <hr class="swimmingpool">
-        <label>E-mail:</label>
+        <label>Last name: </label><br>
+        <input type="text" name="Last name" cols="65"><br><br>
+        <hr class="swimmingpool">
+        <label>E-mail:</label><br>
         <input type="email" value="" name="your e-mail" cols="65"><br><br>
         <hr class="swimmingpool">
-        <label>Birthday:</label>
+        <label>Birthday:</label><br>
         <input type="date"> <br><br>
         <hr class="swimmingpool">
-        <label>Your Message :</label><br><br>
-        <textarea name="Your Message" rows="5" cols="65"></textarea><br><br>
+        <label>Your Message :</label><br>
+        <textarea name="Your Message" placeholder="Trust me..." rows="5" cols="65"></textarea><br>
         <hr class="swimmingpool">
-        <input type="submit" value="ship message">
+        <input type="submit" value="ship message"><br>
       </fieldset>
     </form>
   </p>
