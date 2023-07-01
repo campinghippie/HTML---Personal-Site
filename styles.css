@@ -75,10 +75,15 @@ a:hover {
 a:active {
   color: #39FF14;
 }
+#MapJost {
+  width: 1000px;
+  height: 500px;
+  border: 20px inset #f7e98e;
+}
 fieldset {
-  border-style: none;
   border: 10px inset #5CA4CA;
-  width: 5%;
+  width: 1000px;
+  height: 500px;
 }
 .swimmingpool {
   border-style: none;
@@ -118,7 +123,7 @@ input[type="submit"] {
   border-bottom-right-radius: 50%;
   border-color: #FCF798;
   color: #E0FFF9;
-  padding: 18px 32px 18px 8px;
+  padding: 14px 32px 14px 8px;
   text-decoration: none;
   margin: 4px 2px;
   cursor: pointer;
@@ -139,7 +144,6 @@ pre {
   background-color: #1B1B1C;
   padding: 1px;
   font-size: 100%;
-
 }
 code {
   font-family: Cascadia Mono,"courier new";
@@ -148,8 +152,31 @@ code {
   padding: 1px;
   font-size: 100%;
 }
+#ThreeEnduro {
+  width: 1024; 
+  height: 288;
+}
+#Yamaha {
+  font-family: 'Bayon', sans-serif;
+}
+#DT250D {
+  width: 525px;
+  height: 700px;
+}
+#YamahaPinUp {
+  font-family: 'Bayon', sans-serif;
+}
+#HondaDual {
+  width: 800px;
+  height: 1050px;
+}
+#XLX250R {
+  width: 800px;
+  height: 1050px;
+}
 .enduro-honda {
   font-family: 'Fraunces', serif;
+  color: #D81813;
 }
 .honda {
   margin: 10px;
@@ -158,12 +185,12 @@ code {
   color:#FFFFFF;
   border: 10px solid  #00256b;
 }
-.honda > h3 {
-  padding-left: 32px;
+#honda-h3 {
+  padding-left: 28px;
 }
-  .honda > img {
-    padding-left: 32px;  
-  }
+#honda-img {
+  padding-left: 28px;   
+}
 .honda > audio {
   padding-left: 32px;
 }
@@ -193,6 +220,28 @@ code {
   font-size: xx-large;
   font-style: italic;
 }
-
+#Honda300L {
+  width: 900px;
+  height: 600px;
+  margin-left: 10px;
+}
+#Honda300Rally {
+  width: 900px;
+  height: 600px;
+  margin-left: 58px; 
+}
+#KTMbody {
+  font-family: 'Notable', sans-serif;
+  font-style: italic;
+  color: #FBFCFC;
+  text-shadow: -2px -2px 0 #DE5E32,
+               2px 2px 0 #DE5E32,
+               2px 2px 0 #DE5E32,
+               -2px 2px 0 #DE5E32;
+}
+#KTMad {
+  width: 500px;
+  height: 650px; 
+}
 
 
