@@ -82,13 +82,13 @@ a:active {
 }
 fieldset {
   border: 10px inset #5CA4CA;
-  width: 1000px;
-  height: 500px;
+  width: 1500px;
+  height: 750px;
 }
 .swimmingpool {
   border-style: none;
   border-top: 4px dotted #FF3131;
-  width: 1000px;
+  width: 1500px;
 }
 ::-webkit-input-placeholder {
   color: #74D2FF;
@@ -111,6 +111,10 @@ input[type="email"], textarea {
 }
 input[type="date"], textarea {
   color: #74D2FF;
+  background-color : #FCF798;
+  border: solid #74D2FF medium;
+}
+input[type="number"], textarea {
   background-color : #FCF798;
   border: solid #74D2FF medium;
 }

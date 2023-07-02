@@ -42,24 +42,52 @@
     <form action="mailto:joostvanlierop@gmail.com" method="post" enctype="text/plain">
       <fieldset>
         <label>First name: </label><br>
-        <input type="text" name="First name" cols="65"><br><br>
+        <input type="text" name="First name" cols="65"><br>
         <hr class="swimmingpool">
         <label>Last name: </label><br>
-        <input type="text" name="Last name" cols="65"><br><br>
+        <input type="text" name="Last name" cols="65"><br>
         <hr class="swimmingpool">
         <label>E-mail:</label><br>
-        <input type="email" value="" name="your e-mail" cols="65"><br><br>
+        <input type="email" value="" name="your e-mail" cols="65"><br>
         <hr class="swimmingpool">
         <label>Birthday:</label><br>
-        <input type="date"> <br><br>
+        <input type="date"> <br>
+        <hr class="swimmingpool">
+        <label for="favcolor">Select your favorite color:</label><br>
+        <input type="color" id="favcolor" name="favcolor" value="#ff0000"><br>
+        <hr class="swimmingpool">
+        <label for="LuckyNumber">What is your Lucky Number?</label><br>
+        <input type="number" id="quantity" name="LuckyNumber"><br>
         <hr class="swimmingpool">
         <label>Your Message :</label><br>
         <textarea name="Your Message" placeholder="Trust me..." rows="5" cols="65"></textarea><br>
         <hr class="swimmingpool">
+        <label></label>
         <input type="submit" value="ship message"><br>
       </fieldset>
     </form>
   </p>
+  <input type="checkbox" id="clever" name="clever" value="clever">
+  <label for="clever">Are you clever?</label><br>
+  <input type="checkbox" id="sport" name="sport" value="sport">
+  <label for="sport">Do you like to practise sport?</label><br>
+  <input type="checkbox" id="social" name="social" value="social">
+  <label for="social">Are you easygoing?</label><br>
+  <input type="checkbox" id="motor" name="motor" value="motor">
+  <label for="motor">Do you own a motorcycle?</label><br>
+  <input type="checkbox" id="boat" name="boat" value="boat">
+  <label for="motor">Do you own a boat?</label><br>
+  <input type="checkbox" id="camp" name="camp" value="camp">
+  <label for="sport">Do you like camping and outdoor adventures?</label><br>
+  <input type="checkbox" id="candidate" name="candidate" value="candidate">
+  <label>Are you female and below 40 years old?</label><br>
+  <label>If you checked all of the checkboxes above; Do you want to date me?</label>
+  <input type="image" src="images/white-heart.jpg" alt="yes, date!" width="25"height="25"><br>
+  <label for="birthdaytime">date-date and time:</label>
+  <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+  <input type="submit">
+
+
 </body>
 
 </html>
