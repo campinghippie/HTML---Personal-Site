@@ -75,6 +75,9 @@ a:hover {
 a:active {
   color: #39FF14;
 }
+input[type="range"] {
+  appearance: slider-vertical;
+}
 #MapJost {
   width: 1000px;
   height: 500px;
