@@ -76,59 +76,91 @@ a:active {
   color: #39FF14;
 }
 input[type="range"] {
+  position: absolute;
+  display:flex;
   appearance: slider-vertical;
+  color: #5CA4CA;
+}
+datalist {
+  position: relative;
+  display: block;
+  flex-direction: column;
+  justify-content: space-between;
+  writing-mode: bt-lr;
+  width: 200px;
+}
+option {
+  padding: 0;
 }
 #MapJost {
   width: 1000px;
   height: 500px;
   border: 20px inset #f7e98e;
 }
-fieldset {
+#ID {
   border: 10px inset #5CA4CA;
-  width: 1500px;
-  height: 750px;
+  width: 1110px;
+  height: 555px;
 }
-.swimmingpool {
+#dateform {
+  border: 10px inset #5CA4CA;
+  border-radius: 5%;
+  width: 650px;
+  height: 575px;
+}
+#value {
+  border: 10px inset #5CA4CA;
+  border-radius: 5%;
+  width: 265px;
+  height: 265px;
+}
+legend {
+  color: #0047;
+}
+.swimmingpoolID {
   border-style: none;
   border-top: 4px dotted #FF3131;
-  width: 1500px;
+  width: 1110px;
 }
 ::-webkit-input-placeholder {
-  color: #74D2FF;
+  color: #5CA4CA;
 }
 :-ms-input-placeholder {
-  color: #74D2FF;
+  color: #5CA4CA;
 }
 ::placeholder {
-  color: #74D2FF;
+  color: #5CA4CA;
 }
 input[type="text"], textarea {
   background-color : #FCF798;
-  border: solid #74D2FF medium;
+  border: solid #5CA4CA medium;
 }
 input[type="email"], textarea {
   background-color : #FCF798;
   border: solid;
-  border-color: #74D2FF;
+  border-color: #5CA4CA;
   border-width: medium;
 }
 input[type="date"], textarea {
-  color: #74D2FF;
+  color: #5CA4CA;
   background-color : #FCF798;
-  border: solid #74D2FF medium;
+  border: solid #5CA4CA medium;
+}
+input[type="color"], textarea {
+  color: #5CA4CA;
+  background-color : #FCF798;
+  border: solid #5CA4CA medium;
 }
 input[type="number"], textarea {
   background-color : #FCF798;
-  border: solid #74D2FF medium;
+  border: solid #5CA4CA medium;
 }
-
 input[type="submit"] {
   background-color : #74D2FF;
-  border: solid;
+  border: solid #FCF798;
   border-width: thick;
   border-top-right-radius: 50%;
   border-bottom-right-radius: 50%;
-  border-color: #FCF798;
   color: #E0FFF9;
   padding: 14px 32px 14px 8px;
   text-decoration: none;
@@ -137,10 +169,139 @@ input[type="submit"] {
   font-size: large;
 }
 input[type=submit]:hover {
+  background-color: #5CA4CA;
+}
+input[type=submit]:active {
+  background-color: #000080;
+  color: #FCF798;
+}
+.checktainer {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.checktainer input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 12px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: #74D2FF;
+  border: solid medium #FCF798;
+}
+.checktainer:hover input ~ .checkmark {
+  background-color: #5CA4CA;
+  border: solid medium #FCF798;
+}
+.checktainer input:checked ~ .checkmark {
+  background-color: #000080;
+  border: solid medium #FCF798;
+}
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.checktainer input:checked ~ .checkmark:after {
+  display: block;
+}
+.checktainer .checkmark:after {
+  left: 11px;
+  top: 0px;
+  width: 5px;
+  height: 7px;
+  border: solid #FCF798;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+#whiteheart {
+  border: 10px #f7e98e outset;
+}
+input[type="datetime-local"], textarea {
+  color: #5CA4CA;
+  background-color : #FCF798;
+  border: solid #5CA4CA medium;
+}
+input[type="URL"], textarea {
+  color: #5CA4CA;
+  background-color : #FCF798;
+  border: solid #5CA4CA medium;
+}
+input[type="tel"], textarea {
+  color: #5CA4CA;
+  background-color : #FCF798;
+  border: solid #5CA4CA medium;
+}
+.buttontainer {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.buttontainer input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.buttmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 30px;
+  width: 15px;
+  background-color: #74D2FF;
+  border: solid medium #FCF798;
+  border-radius: 50%;
+}
+.buttontainer:hover input ~ .buttmark {
+  background-color: #5CA4CA;
+}
+.buttontainer input:checked ~ .buttmark {
   background-color: #000080;
 }
+.buttmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.buttontainer input:checked ~ .buttmark:after {
+  display: block;
+}
+.buttontainer .buttmark:after {
+  top: 6px;
+ left: 5px;
+ width: 6px;
+ height: 18px;
+ border-radius: 50%;
+ background: #FCF798;
+}
 pre {
-  color: #5CA4CA;
+  color: #0047;
   font-family: 'Ballet', cursive;
   font-size: 26px;
   font-weight: bolder;

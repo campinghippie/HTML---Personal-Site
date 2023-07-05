@@ -38,71 +38,104 @@
   <br>
   <br>
   <p>
-    <form action="mailto:" method="post" enctype="text/plain">
-      <fieldset>
-        <label>First name: </label><br>
+  <form action="mailto:" method="post" enctype="text/plain">
+    <fieldset id="ID">
+      <legend>ID & Contact</legend>
+      <label>First name: </label><br>
         <input type="text" name="First name" cols="65"><br>
-        <hr class="swimmingpool">
-        <label>Last name: </label><br>
+      <hr class="swimmingpoolID">
+      <label>Last name: </label><br>
         <input type="text" name="Last name" cols="65"><br>
-        <hr class="swimmingpool">
-        <label>E-mail:</label><br>
+      <hr class="swimmingpoolID">
+      <label>E-mail:</label><br>
         <input type="email" value="" name="your e-mail" cols="65"><br>
-        <hr class="swimmingpool">
-        <label>Birthday:</label><br>
+      <hr class="swimmingpoolID">
+      <label>Birthday:</label><br>
         <input type="date"> <br>
-        <hr class="swimmingpool">
-        <label for="favcolor">Select your favorite color:</label><br>
+      <hr class="swimmingpoolID">
+      <label for="favcolor">Select your favorite color:</label><br>
         <input type="color" id="favcolor" name="favcolor" value="#ff0000"><br>
-        <hr class="swimmingpool">
-        <label for="LuckyNumber">What is your Lucky Number?</label><br>
+      <hr class="swimmingpoolID">
+      <label for="LuckyNumber">What is your Lucky Number?</label><br>
         <input type="number" id="quantity" name="LuckyNumber"><br>
-        <hr class="swimmingpool">
-        <label>Your Message :</label><br>
+      <hr class="swimmingpoolID">
+      <label>Your Message :</label><br>
         <textarea name="Your Message" placeholder="Trust me..." rows="5" cols="65"></textarea><br>
-        <hr class="swimmingpool">
-        <label></label>
+      <hr class="swimmingpoolID">
+      <label></label>
         <input type="submit" value="ship message"><br>
-      </fieldset>
-    </form>
+    </fieldset>
+  </form>
   </p>
     <form>
-      <fieldset>
-        <legend>💙</legend>
-      <input type="checkbox" id="clever" name="clever" value="clever">
-      <label for="clever">Are you clever?</label><br>
-      <input type="checkbox" id="sport" name="sport" value="sport">
-      <label for="sport">Do you like to practise sport?</label><br>
-      <input type="checkbox" id="social" name="social" value="social">
-      <label for="social">Are you easygoing?</label><br>
-      <input type="checkbox" id="motor" name="motor" value="motor">
-      <label for="motor">Do you own a motorcycle?</label><br>
-      <input type="checkbox" id="boat" name="boat" value="boat">
-      <label for="motor">Do you own a boat?</label><br>
-      <input type="checkbox" id="camp" name="camp" value="camp">
-      <label for="sport">Do you like camping and outdoor adventures?</label><br>
-      <input type="checkbox" id="candidate" name="candidate" value="candidate">
-      <label>Are you female and below 40 years old?</label><br>
-      <label>If you checked all of the checkboxes above; Do you want to date me?</label>
-      <input type="image" src="images/white-heart.jpg" alt="yes, date!" width="25"height="25"><br>
-      <label for="birthdaytime">date-date and time:</label>
-      <input type="datetime-local" id="birthdaytime" name="birthdaytime">
-      <input type="submit">
-    </fieldset>
+      <fieldset id="dateform">
+        <legend>💙DateForm</legend>
+        <label for="clever" class="checktainer">Are you clever?
+          <input type="checkbox" id="clever" name="clever" value="clever">
+          <span class="checkmark"></span>
+        </label><br>
+        <label for="sport" class="checktainer">Do you like to practise sport?
+          <input type="checkbox" id="sport" name="sport" value="sport">
+          <span class="checkmark"></span>
+        </label><br>
+        <label for="social" class="checktainer">Are you easygoing?
+          <input type="checkbox" id="social" name="social" value="social">
+          <span class="checkmark"></span>
+        </label><br>
+        <label for="motor" class="checktainer">Do you own a motorcycle?
+          <input type="checkbox" id="motor" name="motor" value="motor">
+          <span class="checkmark"></span>
+        </label><br>
+        <label for="boat" class="checktainer">Do you own a boat?
+          <input type="checkbox" id="boat" name="boat" value="boat">
+          <span class="checkmark"></span>
+        </label><br>
+        <label for="camp" class="checktainer">Do you like camping and outdoor adventures?
+          <input type="checkbox" id="camp" name="camp" value="camp">
+          <span class="checkmark"></span>
+        </label><br>
+        <label for="candidate" class="checktainer">Are you female and below 40 years old?
+          <input type="checkbox" id="candidate" name="candidate" value="candidate">
+          <span class="checkmark"></span>
+        </label><br>
+        <label for="date-agree">If you checked all of the checkboxes above; Do you want to date me? if yes, click here 
+          <input id=whiteheart type="image" src="images/white-heart.jpg" alt="yes, date!" width="40"height="40"><br>
+          <span class="checkmark"></span>
+        </label>
+        <label for="datedatetime">date-date and time:
+          <input type="datetime-local" id="datedatetime" name="datedatetime"><br>
+        </label>
+        <label for="datelocation" class="datelocation">Date location suggestion
+          <input type="text" name="location" cols="65"><br>
+        </label>
+        <label for="homepage" class="homepage">Add your Social Media Profile URL:
+          <input type="url" id="homepage" name="homepage"><br>
+        </label>
+        <label for="phone" class="phone">Enter your phone number, so i can call you back:
+          <input type="tel" id="phone" name="phone" placeholder="Camp, Peace & ......"><br><br>
+        </label>
+          <input type="submit" value="send invitation">
+      </fieldset>
     </form>
 
-  <form action="">
-    <fieldset>
-    <legend>What do you think of this website ?</legend>
-    <input type="radio" id="good-website" name="website-rating" value="good-website">
-    <label for="good-website">good website 🙂</label><br>
-    <input type="radio" id="mediocre-website" name="website-rating" value="mediocre-website">
-    <label for="mediocre-website">mwah...😐</label><br>
-    <input type="radio" id="bad-website" name="website-rating" value="bad-website">
-    <label for="bad-website">bad website 🙁</label><br>
-    <input type="submit" value="vote">
-</fieldset>
-  </form>
+    <form action="">
+      <fieldset id="value">
+       <legend>How do you value this website ?</legend>
+         <label for="good-website"  class="buttontainer">good website 🙂
+           <input type="radio" id="good-website" name="website-rating" value="good-website">
+         <span class="buttmark"></span>
+         </label><br>
+         <label for="mediocre-website"  class="buttontainer">mwah...😐
+           <input type="radio" id="mediocre-website" name="website-rating" value="mediocre-website">
+         <span class="buttmark"></span>
+         </label><br>
+         <label for="bad-website" class="buttontainer">bad website 🙁
+           <input type="radio" id="bad-website" name="website-rating" value="bad-website">
+         <span class="buttmark"></span>
+         </label><br>
+        <input type="submit" value="Tell me what you think">
+      </fieldset>
+    </form>
   
 </body>
 
