@@ -1,3 +1,7 @@
+::selection {
+  background-color: #000080;
+  color: #FCF798;
+}
 body {
   color: #FBFCFC;
   background-color: #85C1E9;
@@ -67,13 +71,13 @@ a:link {
   color: #FDFEFE;
 }
 a:visited {
-  color: #FCF3CF;
+  color: #AFEEEE;
 }
 a:hover {
-  color: #FF6700;
+  color: #FFD580;
 }
 a:active {
-  color: #39FF14;
+  color: #7FFFD4;
 }
 input[type="range"] {
   position: absolute;
@@ -99,8 +103,8 @@ option {
 }
 #ID {
   border: 10px inset #5CA4CA;
-  width: 1110px;
-  height: 555px;
+  width: 1400px;
+  height: 700px;
 }
 #dateform {
   border: 10px inset #5CA4CA;
@@ -120,7 +124,7 @@ legend {
 .swimmingpoolID {
   border-style: none;
   border-top: 4px dotted #FF3131;
-  width: 1110px;
+  width: 1400px;
 }
 ::-webkit-input-placeholder {
   color: #5CA4CA;
@@ -155,13 +159,30 @@ input[type="number"], textarea {
   background-color : #FCF798;
   border: solid #5CA4CA medium;
 }
+select {
+  color: #5CA4CA;
+  background-color : #FCF798;
+  border: solid #5CA4CA medium;
+  border-radius: 10%;
+  padding: 5px 5px;
+  cursor: pointer;
+}
+optgroup {
+  color: #4682B4;
+}
+option {
+  color: #5CA4CA;
+}
+option:hover {
+  background-color: #5CA4CA;
+  color: #FCF798;
+}
 input[type="submit"] {
+  color: #FCF798;
   background-color : #74D2FF;
-  border: solid #FCF798;
-  border-width: thick;
+  border: solid #FCF798 thick;
   border-top-right-radius: 50%;
   border-bottom-right-radius: 50%;
-  color: #E0FFF9;
   padding: 14px 32px 14px 8px;
   text-decoration: none;
   margin: 4px 2px;
@@ -170,10 +191,16 @@ input[type="submit"] {
 }
 input[type=submit]:hover {
   background-color: #5CA4CA;
+  color: #FCF798;
 }
 input[type=submit]:active {
   background-color: #000080;
   color: #FCF798;
+}
+input[type=submit]:visited {
+  background-color: #FCF798;
+  color: #000080;
+  border-color: #000080;
 }
 .checktainer {
   display: block;
@@ -300,6 +327,35 @@ input[type="tel"], textarea {
  border-radius: 50%;
  background: #FCF798;
 }
+details {
+  color: #EE6B2B;
+  background-color: #FFD801;
+  box-shadow: 6px 6px 0 #EE6B2B;
+  border-radius: 25px 25px 25px 25px;
+  font: 
+     "Open Sans",
+    Calibri,
+    sans-serif;
+    font-height: 20px;
+    font-weight: 800;
+  width: 620px;
+}
+
+details > summary {
+  text-align: center;
+  color: #1B1B1C;
+  padding: 2px 6px;
+  width: 38em;
+  border: none;
+  cursor: pointer;
+  list-style: none;
+}
+
+details > p {
+  padding: 2px 6px;
+  margin: 0;
+}
+
 pre {
   color: #0047;
   font-family: 'Ballet', cursive;

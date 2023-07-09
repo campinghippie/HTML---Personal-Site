@@ -37,36 +37,86 @@
   <hr>
   <br>
   <br>
-  <p>
-  <form action="mailto:" method="post" enctype="text/plain">
+  <form id="contact" action="mailto:" method="post" enctype="text/plain">
     <fieldset id="ID">
       <legend>ID & Contact</legend>
-      <label>First name: </label><br>
-        <input type="text" name="First name" cols="65"><br>
+      <label for="firstname">First name: </label><br>
+        <input id=firstname type="text" name="First name" cols="65"><br>
       <hr class="swimmingpoolID">
-      <label>Last name: </label><br>
-        <input type="text" name="Last name" cols="65"><br>
+      <label id="lastname">Last name: </label><br>
+        <input for="lastname" type="text" name="Last name" cols="65"><br>
       <hr class="swimmingpoolID">
-      <label>E-mail:</label><br>
-        <input type="email" value="" name="your e-mail" cols="65"><br>
+      <label for="email">E-mail:</label><br>
+        <input id="email" type="email" value="" name="your e-mail" cols="65"><br>
       <hr class="swimmingpoolID">
-      <label>Birthday:</label><br>
-        <input type="date"> <br>
+      <label for="birtday">Birthday:</label><br>
+        <input id="birthday" type="date"> <br>
       <hr class="swimmingpoolID">
       <label for="favcolor">Select your favorite color:</label><br>
         <input type="color" id="favcolor" name="favcolor" value="#ff0000"><br>
       <hr class="swimmingpoolID">
       <label for="LuckyNumber">What is your Lucky Number?</label><br>
-        <input type="number" id="quantity" name="LuckyNumber"><br>
+        <input type="number" id="LuckyNumber" name="LuckyNumber"><br>
       <hr class="swimmingpoolID">
-      <label>Your Message :</label><br>
-        <textarea name="Your Message" placeholder="Trust me..." rows="5" cols="65"></textarea><br>
+      <label for="message">Your Message :</label><br>
+        <textarea id="message" name="Your Message" placeholder="Trust me..." rows="5" cols="65"></textarea><br>
       <hr class="swimmingpoolID">
-      <label></label>
+      <label for="favmotor">your favorite motorcycle-type:</label>
+      <select name="favmotor" id="favmotor" form="contact" size="5" multiple required>
+        <optgroup label="Standard">
+          <option value="naked bike">Naked bike</option>
+          <option value="roadster">Roadster</option>
+        </optgroup>
+        <optgroup label="Cruisers">
+          <option value="cruiser">Cruiser</option>
+          <option value="power-cruiser">Power-Cruiser</option>
+          <option value="chopper">Chopper</option>
+          <option value="bobber">Bobber</option>
+        </optgroup>
+        <optgroup label="Touring">
+          <option value="touring">Touring</option>
+          <option value="touring-bags">Touring with bags</option>
+          <option value="Sport touring">Sport touring</option>
+        </optgroup>
+        <optgroup label="Sport-Bikes">
+          <option value="sport-bike">Sport-bike</option>
+          <option value="muscle-bike">Muscle-bike</option>
+          <option value="streetfighter">Streetfighter</option>
+        </optgroup>
+        <optgroup label="Off-road Motorcycles">
+          <option value="motocross">Motocross</option>
+          <option value="trials">Trials</option>
+          <option value="enduro">Enduro</option>
+          <option value="rallyraid">Rally-Raid</option>
+          <option value="track-racing">Track-Racing</option>
+          <option value="Snow-bike">Snow-bike</option>
+        </optgroup>
+        <optgroup label="Dual-Sport Bikes">
+          <option value="scrambler">Scrambler</option>
+          <option value="scrambler">Adventure</option>
+          <option value="Dualsport">Dual-Sport</option>
+          <option value="Supermoto">Supermoto</option>
+        </optgroup>
+        <optgroup label="Tricycles">
+          <option value="reverse-trike">Reverse Trike: two wheels front</option>
+          <option value="trike">Trike: two wheels back</option>
+        </optgroup>
+        <optgroup label="Minibikes">
+          <option value="monkey-bike">Monkey-bike</option>
+          <option value="pocketbike"> Pocketbike</option>
+          <option value="pitbike">Pitbike</option>
+        </optgroup>
+        <optgroup label="other motorcycle types">
+          <option value="scooter">Scooter</option>
+          <option value="underbone">Underbone</option>
+          <option value="moped">Moped</option>
+        </optgroup>
+      </select>
+      <hr class="swimmingpoolID">
+      <br>
         <input type="submit" value="ship message"><br>
     </fieldset>
   </form>
-  </p>
     <form>
       <fieldset id="dateform">
         <legend>💙DateForm</legend>
@@ -98,7 +148,7 @@
           <input type="checkbox" id="candidate" name="candidate" value="candidate">
           <span class="checkmark"></span>
         </label><br>
-        <label for="date-agree">If you checked all of the checkboxes above; Do you want to date me? if yes, click here 
+        <label for="whiteheart">If you checked all of the checkboxes above; Do you want to date me? if yes, click here 
           <input id=whiteheart type="image" src="images/white-heart.jpg" alt="yes, date!" width="40"height="40"><br>
           <span class="checkmark"></span>
         </label>
@@ -117,7 +167,7 @@
           <input type="submit" value="send invitation">
       </fieldset>
     </form>
-
+    <br>
     <form action="">
       <fieldset id="value">
        <legend>How do you value this website ?</legend>
@@ -132,10 +182,17 @@
          <label for="bad-website" class="buttontainer">bad website 🙁
            <input type="radio" id="bad-website" name="website-rating" value="bad-website">
          <span class="buttmark"></span>
-         </label><br>
+         <br>
         <input type="submit" value="Tell me what you think">
       </fieldset>
     </form>
+    <label for="why">Why? </label><br>
+        <input id="why" type="text" name="U can't touch me..." cols="65" readonly form="value" placeholder="U can't Touch me...."><br>
+    <label for="formfillprogress">Form fill progress:</label>
+    <progress id="formfillprogress" value="" max=""></progress>
+  
+
+
   
 </body>
 
