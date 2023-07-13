@@ -32,7 +32,7 @@ h1 {
   font-size: 78px;
   text-shadow: 0 0 45px #FFFF33;
 }
-h2 {
+.neon {
   text-shadow: 0 0 30px #FFFF33;
   font-family: 'Neonderthaw', cursive;
 }
@@ -103,8 +103,8 @@ option {
 }
 #ID {
   border: 10px inset #5CA4CA;
-  width: 1400px;
-  height: 700px;
+  width: 1840px;
+  height: 985px;
 }
 #dateform {
   border: 10px inset #5CA4CA;
@@ -115,8 +115,8 @@ option {
 #value {
   border: 10px inset #5CA4CA;
   border-radius: 5%;
-  width: 265px;
-  height: 265px;
+  width: 220px;
+  height: 220px;
 }
 legend {
   color: #0047;
@@ -124,7 +124,7 @@ legend {
 .swimmingpoolID {
   border-style: none;
   border-top: 4px dotted #FF3131;
-  width: 1400px;
+  width: 1840px;
 }
 ::-webkit-input-placeholder {
   color: #5CA4CA;
@@ -135,45 +135,30 @@ legend {
 ::placeholder {
   color: #5CA4CA;
 }
-input[type="text"], textarea {
-  background-color : #FCF798;
-  border: solid #5CA4CA medium;
-}
-input[type="email"], textarea {
-  background-color : #FCF798;
-  border: solid;
-  border-color: #5CA4CA;
-  border-width: medium;
-}
-input[type="date"], textarea {
+
+.divingboard {
   color: #5CA4CA;
-  background-color : #FCF798;
-  border: solid #5CA4CA medium;
+  background-color: ivory;
+  border: none;
+  margin-left: -29px;
+  height: 3em;
+  width: 17em;
+  box-shadow: 1.2em 1.2em #77add1;
 }
-input[type="color"], textarea {
-  color: #5CA4CA;
-  background-color : #FCF798;
-  border: solid #5CA4CA medium;
+.divingboard label{
+  background-color: #85C1E9;
 }
-input[type="number"], textarea {
-  background-color : #FCF798;
-  border: solid #5CA4CA medium;
-}
-select {
-  color: #5CA4CA;
-  background-color : #FCF798;
-  border: solid #5CA4CA medium;
-  border-radius: 10%;
-  padding: 5px 5px;
+#favmotor {
   cursor: pointer;
+  height: 5em;
 }
 optgroup {
   color: #4682B4;
 }
-option {
+.motoption {
   color: #5CA4CA;
 }
-option:hover {
+.motoption:hover {
   background-color: #5CA4CA;
   color: #FCF798;
 }
@@ -183,7 +168,7 @@ input[type="submit"] {
   border: solid #FCF798 thick;
   border-top-right-radius: 50%;
   border-bottom-right-radius: 50%;
-  padding: 14px 32px 14px 8px;
+  padding: 12px 30px 12px 8px;
   text-decoration: none;
   margin: 4px 2px;
   cursor: pointer;
@@ -266,6 +251,11 @@ input[type="datetime-local"], textarea {
   background-color : #FCF798;
   border: solid #5CA4CA medium;
 }
+.datelocation {
+  color: #5CA4CA;
+  background-color : #FCF798;
+  border: solid #5CA4CA medium;
+}
 input[type="URL"], textarea {
   color: #5CA4CA;
   background-color : #FCF798;
@@ -327,6 +317,18 @@ input[type="tel"], textarea {
  border-radius: 50%;
  background: #FCF798;
 }
+#why {
+  color: #5CA4CA;
+  background-color : #FCF798;
+  border: solid #5CA4CA medium;
+}
+#formfillprogress {
+  color: ;
+  border: solid #5CA4CA medium;
+  height: 26px;
+  width: 30%;
+}
+
 details {
   color: #EE6B2B;
   background-color: #FFD801;
@@ -336,14 +338,13 @@ details {
      "Open Sans",
     Calibri,
     sans-serif;
-    font-height: 20px;
     font-weight: 800;
   width: 620px;
 }
 
 details > summary {
   text-align: center;
-  color: #1B1B1C;
+  color: #EE6B2B;
   padding: 2px 6px;
   width: 38em;
   border: none;
@@ -383,6 +384,9 @@ code {
 #Yamaha {
   font-family: 'Bayon', sans-serif;
 }
+s {
+  text-decoration: line-through red 0.1em;
+}
 #DT250D {
   width: 525px;
   height: 700px;
@@ -402,6 +406,29 @@ code {
 .enduro-honda {
   font-family: 'Fraunces', serif;
   color: #D81813;
+}
+#hondah2 {
+  color: #FBFCFC;
+  text-decoration: underline 3px #9FE2BF;
+}
+ #hondablackletters {
+  color:#1B1B1C;
+  background-color: #ffd300;
+  text-decoration: underline overline #B81B0E 3px;
+}
+#hondaredletters {
+  background-color: #ffd300;
+  text-decoration: underline overline #B81B0E 3px;
+}
+#hondawhiteletters {
+  background-color: #ffd300;
+  color: #FBFCFC;
+  text-decoration: underline overline 3px;
+}
+#hondablueletters {
+  background-color: #ffd300;
+  color: #00256b;
+  text-decoration: underline overline 3px;
 }
 .honda {
   margin: 10px;

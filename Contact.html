@@ -30,7 +30,7 @@
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d71867.97146633393!2d-64.83186173839312!3d18.472307073675065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c050b64db4c19d7%3A0xa524c69e8029cb07!2sJost%20Van%20Dyke!5e0!3m2!1snl!2snl!4v1681728151663!5m2!1snl!2snl"  
           allowfullscreen="true" loading="eager" referrerpolicy="no-referrer-when-downgrade">
   </iframe>
-  <br>
+  
   <br>
   <br>
   <br>
@@ -40,81 +40,91 @@
   <form id="contact" action="mailto:" method="post" enctype="text/plain">
     <fieldset id="ID">
       <legend>ID & Contact</legend>
+      <label for="salutation">Gender:<br>
+      <input class="divingboard" list="salutation" name="salutation" form="contact">
+      <datalist id="salutation">
+        <option value="Mrs."></option>
+        <option value="Mr."></option>
+      </datalist>
+    </label>
+      <hr class="swimmingpoolID">
       <label for="firstname">First name: </label><br>
-        <input id=firstname type="text" name="First name" cols="65"><br>
+        <input class="divingboard" id=firstname type="text" name="First name" cols="65"><br><br>
       <hr class="swimmingpoolID">
       <label id="lastname">Last name: </label><br>
-        <input for="lastname" type="text" name="Last name" cols="65"><br>
+        <input class="divingboard" for="lastname" type="text" name="Last name" cols="65"><br><br>
       <hr class="swimmingpoolID">
       <label for="email">E-mail:</label><br>
-        <input id="email" type="email" value="" name="your e-mail" cols="65"><br>
+        <input class="divingboard" id="email" type="email" value="" name="your e-mail" cols="65"><br><br>
       <hr class="swimmingpoolID">
       <label for="birtday">Birthday:</label><br>
-        <input id="birthday" type="date"> <br>
+        <input class="divingboard" id="birthday" type="date"> <br><br>
       <hr class="swimmingpoolID">
       <label for="favcolor">Select your favorite color:</label><br>
-        <input type="color" id="favcolor" name="favcolor" value="#ff0000"><br>
+        <input class="divingboard" type="color" id="favcolor" name="favcolor" value="#FFFFF0"><br><br>
       <hr class="swimmingpoolID">
       <label for="LuckyNumber">What is your Lucky Number?</label><br>
-        <input type="number" id="LuckyNumber" name="LuckyNumber"><br>
+        <input class="divingboard" type="number" id="LuckyNumber" name="LuckyNumber" min="1"><br><br>
       <hr class="swimmingpoolID">
       <label for="message">Your Message :</label><br>
-        <textarea id="message" name="Your Message" placeholder="Trust me..." rows="5" cols="65"></textarea><br>
+        <textarea class="divingboard" id="message" name="Your Message" placeholder="Trust me..." rows="3" cols="25"></textarea><br>
+      <br>
       <hr class="swimmingpoolID">
-      <label for="favmotor">your favorite motorcycle-type:</label>
-      <select name="favmotor" id="favmotor" form="contact" size="5" multiple required>
+      <label for="favmotor">Your favorite motorcycle-type:<br>
+      <select class="divingboard" name="favmotor" id="favmotor" form="contact" size="3" multiple required>
         <optgroup label="Standard">
-          <option value="naked bike">Naked bike</option>
-          <option value="roadster">Roadster</option>
+          <option class="motoption" value="naked bike">Naked bike</option>
+          <option class="motoption" value="roadster">Roadster</option>
         </optgroup>
         <optgroup label="Cruisers">
-          <option value="cruiser">Cruiser</option>
-          <option value="power-cruiser">Power-Cruiser</option>
-          <option value="chopper">Chopper</option>
-          <option value="bobber">Bobber</option>
+          <option class="motoption" value="cruiser">Cruiser</option>
+          <option class="motoption" value="power-cruiser">Power-Cruiser</option>
+          <option class="motoption" value="chopper">Chopper</option>
+          <option class="motoption" value="bobber">Bobber</option>
         </optgroup>
-        <optgroup label="Touring">
-          <option value="touring">Touring</option>
-          <option value="touring-bags">Touring with bags</option>
-          <option value="Sport touring">Sport touring</option>
+        <optgroup class="motoption" label="Touring">
+          <option class="motoption" value="touring">Touring</option>
+          <option class="motoption" value="touring-bags">Touring with bags</option>
+          <option class="motoption" value="Sport touring">Sport touring</option>
         </optgroup>
         <optgroup label="Sport-Bikes">
-          <option value="sport-bike">Sport-bike</option>
-          <option value="muscle-bike">Muscle-bike</option>
-          <option value="streetfighter">Streetfighter</option>
+          <option class="motoption" value="sport-bike">Sport-bike</option>
+          <option class="motoption" value="muscle-bike">Muscle-bike</option>
+          <option class="motoption" value="streetfighter">Streetfighter</option>
         </optgroup>
         <optgroup label="Off-road Motorcycles">
-          <option value="motocross">Motocross</option>
-          <option value="trials">Trials</option>
-          <option value="enduro">Enduro</option>
-          <option value="rallyraid">Rally-Raid</option>
-          <option value="track-racing">Track-Racing</option>
-          <option value="Snow-bike">Snow-bike</option>
+          <option class="motoption" value="motocross">Motocross</option>
+          <option class="motoption" value="trials">Trials</option>
+          <option class="motoption" value="enduro">Enduro</option>
+          <option class="motoption" value="rallyraid">Rally-Raid</option>
+          <option class="motoption" value="track-racing">Track-Racing</option>
+          <option class="motoption" value="Snow-bike">Snow-bike</option>
         </optgroup>
         <optgroup label="Dual-Sport Bikes">
-          <option value="scrambler">Scrambler</option>
-          <option value="scrambler">Adventure</option>
-          <option value="Dualsport">Dual-Sport</option>
-          <option value="Supermoto">Supermoto</option>
+          <option class="motoption" value="scrambler">Scrambler</option>
+          <option class="motoption" value="scrambler">Adventure</option>
+          <option class="motoption" value="Dualsport">Dual-Sport</option>
+          <option class="motoption" value="Supermoto">Supermoto</option>
         </optgroup>
         <optgroup label="Tricycles">
-          <option value="reverse-trike">Reverse Trike: two wheels front</option>
-          <option value="trike">Trike: two wheels back</option>
+          <option class="motoption" value="reverse-trike">Reverse Trike: two wheels front</option>
+          <option class="motoption" value="trike">Trike: two wheels back</option>
         </optgroup>
         <optgroup label="Minibikes">
-          <option value="monkey-bike">Monkey-bike</option>
-          <option value="pocketbike"> Pocketbike</option>
-          <option value="pitbike">Pitbike</option>
+          <option class="motoption" value="monkey-bike">Monkey-bike</option>
+          <option class="motoption" value="pocketbike"> Pocketbike</option>
+          <option class="motoption" value="pitbike">Pitbike</option>
         </optgroup>
         <optgroup label="other motorcycle types">
-          <option value="scooter">Scooter</option>
-          <option value="underbone">Underbone</option>
-          <option value="moped">Moped</option>
+          <option class="motoption" value="scooter">Scooter</option>
+          <option class="motoption" value="underbone">Underbone</option>
+          <option class="motoption" value="moped">Moped</option>
         </optgroup>
       </select>
+      </label>
+      <br><br>
       <hr class="swimmingpoolID">
-      <br>
-        <input type="submit" value="ship message"><br>
+        <input type="submit" value="ship message">
     </fieldset>
   </form>
     <form>
@@ -155,8 +165,8 @@
         <label for="datedatetime">date-date and time:
           <input type="datetime-local" id="datedatetime" name="datedatetime"><br>
         </label>
-        <label for="datelocation" class="datelocation">Date location suggestion
-          <input type="text" name="location" cols="65"><br>
+        <label for="datelocation" >Date location suggestion
+          <input class="datelocation" type="text" name="location" cols="65"><br>
         </label>
         <label for="homepage" class="homepage">Add your Social Media Profile URL:
           <input type="url" id="homepage" name="homepage"><br>
