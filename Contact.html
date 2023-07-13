@@ -10,10 +10,13 @@
   <title>contact details Joost</title>
   <link rel="icon" href="images/envelope-favicon.ico" sizes="any">
   <link rel="icon" href="images/envelope-favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
+<body id="contactbody">
   
   <adress>
   <p>Joost may know, ask @ the bar</p>
@@ -39,7 +42,7 @@
   <br>
   <form id="contact" action="mailto:" method="post" enctype="text/plain">
     <fieldset id="ID">
-      <legend>ID & Contact</legend>
+      <legend><b>ID & Contact</b></legend>
       <label for="salutation">Gender:<br>
       <input class="divingboard" list="salutation" name="salutation" form="contact">
       <datalist id="salutation">
@@ -57,7 +60,7 @@
       <label for="email">E-mail:</label><br>
         <input class="divingboard" id="email" type="email" value="" name="your e-mail" cols="65"><br><br>
       <hr class="swimmingpoolID">
-      <label for="birtday">Birthday:</label><br>
+      <label for="birthday">Birthday:</label><br>
         <input class="divingboard" id="birthday" type="date"> <br><br>
       <hr class="swimmingpoolID">
       <label for="favcolor">Select your favorite color:</label><br>
@@ -129,7 +132,7 @@
   </form>
     <form>
       <fieldset id="dateform">
-        <legend>💙DateForm</legend>
+        <legend><b>💙DateForm</b></legend>
         <label for="clever" class="checktainer">Are you clever?
           <input type="checkbox" id="clever" name="clever" value="clever">
           <span class="checkmark"></span>
@@ -165,7 +168,7 @@
         <label for="datedatetime">date-date and time:
           <input type="datetime-local" id="datedatetime" name="datedatetime"><br>
         </label>
-        <label for="datelocation" >Date location suggestion
+        <label for="datelocation">Date location suggestion
           <input class="datelocation" type="text" name="location" cols="65"><br>
         </label>
         <label for="homepage" class="homepage">Add your Social Media Profile URL:
@@ -180,7 +183,7 @@
     <br>
     <form action="">
       <fieldset id="value">
-       <legend>How do you value this website ?</legend>
+       <legend><b>How do you value this website ?</b></legend>
          <label for="good-website"  class="buttontainer">good website 🙂
            <input type="radio" id="good-website" name="website-rating" value="good-website">
          <span class="buttmark"></span>
@@ -197,7 +200,7 @@
       </fieldset>
     </form>
     <label for="why">Why? </label><br>
-        <input id="why" type="text" name="U can't touch me..." cols="65" readonly form="value" placeholder="U can't Touch me...."><br>
+        <input id="why" type="text" name="U can't touch me..." readonly form="value" placeholder="U can't Touch me...."><br>
     <label for="formfillprogress">Form fill progress:</label>
     <progress id="formfillprogress" value="" max=""></progress>
   

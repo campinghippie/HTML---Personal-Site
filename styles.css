@@ -3,24 +3,32 @@
   color: #FCF798;
 }
 body {
+  font-family: 'Heebo', sans-serif;
+  font-size: 18px;
   color: #FBFCFC;
   background-color: #85C1E9;
 }
 figure {
+  display: inline-block;
   border: 10px #f7e98e outset;
   padding:30px;
   margin: auto;
   background-color: #ffd700;
 }
+section {
+  display: inline-block;
+}
 #profilepic {
   border: 5px #f7e98e inset;
   border-radius: 50%;
 }
-figcaption {
+#goldframecaption {
+  font-family: 'Ballet', cursive;
+  font-weight: bold;
   color: #B59410;
   text-align: center;
   border: 3px #f7e98e outset;
-  width: 16%;
+  width: 20%;
   margin-top: 2%;
   margin-bottom: 0%;
   margin-right: 42%;
@@ -93,8 +101,8 @@ datalist {
   writing-mode: bt-lr;
   width: 200px;
 }
-option {
-  padding: 0;
+#contactbody {
+  font-family: 'Heebo', sans-serif;
 }
 #MapJost {
   width: 1000px;
@@ -102,29 +110,31 @@ option {
   border: 20px inset #f7e98e;
 }
 #ID {
+  background-image: url(images/poolwater.jpg);
   border: 10px inset #5CA4CA;
-  width: 1840px;
-  height: 985px;
+  width: 1800;
+  height: 1200px;
 }
 #dateform {
   border: 10px inset #5CA4CA;
   border-radius: 5%;
-  width: 650px;
-  height: 575px;
+  width: 750px;
+  height: 750px;
 }
 #value {
   border: 10px inset #5CA4CA;
   border-radius: 5%;
-  width: 220px;
-  height: 220px;
+  width: 300px;
+  height: 300px;
 }
 legend {
   color: #0047;
 }
+
 .swimmingpoolID {
   border-style: none;
-  border-top: 4px dotted #FF3131;
-  width: 1840px;
+  border-top: 5px dotted #FF3131;
+  width: 1800px;
 }
 ::-webkit-input-placeholder {
   color: #5CA4CA;
@@ -137,13 +147,14 @@ legend {
 }
 
 .divingboard {
+  font-weight: bold;
   color: #5CA4CA;
   background-color: ivory;
   border: none;
   margin-left: -29px;
   height: 3em;
   width: 17em;
-  box-shadow: 1.2em 1.2em #77add1;
+  box-shadow: 1.2em 1.2em 5px hsl(186, 88%, 45%);
 }
 .divingboard label{
   background-color: #85C1E9;
@@ -321,9 +332,9 @@ input[type="tel"], textarea {
   color: #5CA4CA;
   background-color : #FCF798;
   border: solid #5CA4CA medium;
+  width: 17em;
 }
 #formfillprogress {
-  color: ;
   border: solid #5CA4CA medium;
   height: 26px;
   width: 30%;
@@ -358,7 +369,7 @@ details > p {
 }
 
 pre {
-  color: #0047;
+  color: #000080;
   font-family: 'Ballet', cursive;
   font-size: 26px;
   font-weight: bolder;
@@ -376,6 +387,11 @@ code {
   background-color: #1B1B1C;
   padding: 1px;
   font-size: 100%;
+}
+#motoquizbody {
+  color: #C19A6B;
+  font-family: 'Rubik Dirt', cursive;
+  font-size:20px
 }
 #ThreeEnduro {
   width: 1024; 
@@ -411,26 +427,7 @@ s {
   color: #FBFCFC;
   text-decoration: underline 3px #9FE2BF;
 }
- #hondablackletters {
-  color:#1B1B1C;
-  background-color: #ffd300;
-  text-decoration: underline overline #B81B0E 3px;
-}
-#hondaredletters {
-  background-color: #ffd300;
-  text-decoration: underline overline #B81B0E 3px;
-}
-#hondawhiteletters {
-  background-color: #ffd300;
-  color: #FBFCFC;
-  text-decoration: underline overline 3px;
-}
-#hondablueletters {
-  background-color: #ffd300;
-  color: #00256b;
-  text-decoration: underline overline 3px;
-}
-.honda {
+ .honda {
   margin: 10px;
   padding: 30px;
   background-color: #B81B0E;
