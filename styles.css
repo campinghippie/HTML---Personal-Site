@@ -99,7 +99,13 @@ datalist {
   width: 200px;
 }
 #contactbody {
+  
   font-family: 'Heebo', sans-serif;
+  
+}
+#pool {
+  background-image: url(images/pooltile.jpg);
+  font-weight: 900;
 }
 #MapJost {
   width: 1000px;
@@ -112,12 +118,9 @@ datalist {
   width: 1800;
   height: 1200px;
 }
-
-
 legend {
   color: #0047;
 }
-
 .swimmingpoolID {
   border-style: none;
   border-top: 5px dotted #FF3131;
