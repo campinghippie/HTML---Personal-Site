@@ -84,6 +84,22 @@ a:hover {
 a:active {
   color: #7FFFD4;
 }
+table {
+  border-spacing: 40px 8px;
+  }
+th {
+  text-decoration: underline #FFFF33;
+}
+th, td {
+  border-radius: 10px;
+  background-color: #5CA4CA; 
+  text-align: center;
+  padding-left: 6px;
+  padding-right: 6px;
+  }
+  .profdatacell {
+    text-align: left;
+  }
 input[type="range"] {
   position: absolute;
   display:flex;
@@ -99,10 +115,8 @@ datalist {
   width: 200px;
 }
 #contactbody {
-  
   font-family: 'Heebo', sans-serif;
-  
-}
+  }
 #pool {
   background-image: url(images/pooltile.jpg);
   font-weight: 900;
@@ -119,7 +133,8 @@ datalist {
   height: 1200px;
 }
 legend {
-  color: #0047;
+  color: #FCF798;
+  background-color: #33638a;
 }
 .swimmingpoolID {
   border-style: none;
@@ -189,7 +204,8 @@ input[type=submit]:visited {
   border-color: #000080;
 }
 #dateform {
-  background-image: url(images/datepoolwater.jpg);
+  color: #000080;
+  background-image: url(images/hottub.jpg);
   border: 10px inset #5CA4CA;
   border-radius: 5%;
   width: 750px;
@@ -401,6 +417,8 @@ code {
   font-size:20px
 }
 #ThreeEnduro {
+  border: 10px dashed #C19A6B;
+  border-radius: 144px;
   width: 1024; 
   height: 288;
 }
