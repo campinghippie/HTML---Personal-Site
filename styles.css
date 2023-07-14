@@ -154,7 +154,7 @@ legend {
   margin-left: -29px;
   height: 3em;
   width: 17em;
-  box-shadow: 1.2em 1.2em 5px hsl(186, 88%, 45%);
+  box-shadow: 20px 13px 5px rgba(12, 160, 200, 0.7);
 }
 .divingboard label{
   background-color: #85C1E9;
