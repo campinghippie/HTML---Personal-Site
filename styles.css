@@ -23,17 +23,14 @@ section {
   border-radius: 50%;
 }
 #goldframecaption {
-  font-family: 'Ballet', cursive;
+  font-family: 'IM Fell DW Pica SC', serif;
   font-weight: bold;
   color: #B59410;
   text-align: center;
   border: 3px #f7e98e outset;
-  width: 20%;
-  margin-top: 2%;
-  margin-bottom: 0%;
-  margin-right: 42%;
-  margin-left: 42%;
   border-radius: 50%;
+  width: 20%;
+  margin: 2% 42% 0% 42%;
 }
 h1 {
   font-family: 'Neonderthaw', cursive;
@@ -115,18 +112,8 @@ datalist {
   width: 1800;
   height: 1200px;
 }
-#dateform {
-  border: 10px inset #5CA4CA;
-  border-radius: 5%;
-  width: 750px;
-  height: 750px;
-}
-#value {
-  border: 10px inset #5CA4CA;
-  border-radius: 5%;
-  width: 300px;
-  height: 300px;
-}
+
+
 legend {
   color: #0047;
 }
@@ -197,6 +184,13 @@ input[type=submit]:visited {
   background-color: #FCF798;
   color: #000080;
   border-color: #000080;
+}
+#dateform {
+  background-image: url(images/datepoolwater.jpg);
+  border: 10px inset #5CA4CA;
+  border-radius: 5%;
+  width: 750px;
+  height: 750px;
 }
 .checktainer {
   display: block;
@@ -277,6 +271,15 @@ input[type="tel"], textarea {
   background-color : #FCF798;
   border: solid #5CA4CA medium;
 }
+#value {
+  color: #FCF798;
+  font-weight: 900;
+  background-image: url(images/hottubwater.jpg);
+  border: 10px inset #5CA4CA;
+  border-radius: 5%;
+  width: 270px;
+  height: 270px;
+}
 .buttontainer {
   display: block;
   position: relative;
@@ -289,6 +292,7 @@ input[type="tel"], textarea {
   -ms-user-select: none;
   user-select: none;
 }
+
 .buttontainer input {
   position: absolute;
   opacity: 0;
