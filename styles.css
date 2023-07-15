@@ -2,12 +2,14 @@
   background-color: #000080;
   color: #FCF798;
 }
+
 body {
   font-family: 'Heebo', sans-serif;
   font-size: 18px;
   color: #FBFCFC;
   background-color: #85C1E9;
 }
+
 figure {
   display: inline-block;
   border: 10px #f7e98e outset;
@@ -15,14 +17,15 @@ figure {
   margin: auto;
   background-color: #ffd700;
 }
-section {
-  display: inline-block;
-}
-#profilepic {
+
+#profpic {
   border: 5px #f7e98e inset;
   border-radius: 50%;
+  width: 700;
+  height: 700;
 }
-#goldframecaption {
+
+#goldframecaptionprofpic {
   font-family: 'IM Fell DW Pica SC', serif;
   font-weight: bold;
   color: #B59410;
@@ -30,23 +33,30 @@ section {
   border: 3px #f7e98e outset;
   border-radius: 50%;
   width: 20%;
-  margin: 2% 42% 0% 42%;
+  margin: 2% 40% 0% 40%;
+}
+
+#tencom {
+  display: inline-block;
 }
 h1 {
   font-family: 'Neonderthaw', cursive;
   font-size: 78px;
   text-shadow: 0 0 45px #FFFF33;
 }
+
 .neon {
   text-shadow: 0 0 30px #FFFF33;
   font-family: 'Neonderthaw', cursive;
 }
+
 .tooltip {
   position: relative;
   display: inline-block; 
   border-bottom: 2px dotted #5CA4CA;
   padding-bottom: 0px;
 }
+
 .tooltip .tooltiptext {
   position: absolute;
   visibility: hidden;
@@ -59,37 +69,47 @@ h1 {
   padding: 5px 5px;
   width: 160px;
 }
+
 .tooltip:hover .tooltiptext {
   visibility: visible
 }
+
 ::marker {
-  color: #5CA4CA; 
+  color: #00256b; 
   font-size: 18px;
 }
+
 hr {
   border-style: none;
   border-top: 10px dotted #5CA4CA;
   border-width: 10%;
   width: 5%;
 }
+
 a:link {
   color: #FDFEFE;
 }
+
 a:visited {
   color: #AFEEEE;
 }
+
 a:hover {
   color: #FFD580;
 }
+
 a:active {
   color: #7FFFD4;
 }
+
 table {
   border-spacing: 40px 8px;
   }
+
 th {
   text-decoration: underline #FFFF33;
 }
+
 th, td {
   border-radius: 10px;
   background-color: #5CA4CA; 
@@ -97,15 +117,18 @@ th, td {
   padding-left: 6px;
   padding-right: 6px;
   }
-  .profdatacell {
+
+.profdatacell {
     text-align: left;
   }
+
 input[type="range"] {
   position: absolute;
   display:flex;
   appearance: slider-vertical;
   color: #5CA4CA;
 }
+
 datalist {
   position: relative;
   display: block;
@@ -114,39 +137,74 @@ datalist {
   writing-mode: bt-lr;
   width: 200px;
 }
+
 #contactbody {
   font-family: 'Heebo', sans-serif;
   }
+
 #pool {
   background-image: url(images/pooltile.jpg);
   font-weight: 900;
 }
+
 #MapJost {
   width: 1000px;
   height: 500px;
-  border: 20px inset #f7e98e;
 }
+
+#goldframecaptionmapJost {
+  font-family: 'IM Fell DW Pica SC', serif;
+  font-weight: bold;
+  color: #B59410;
+  text-align: center;
+  border: 3px #f7e98e outset;
+  border-radius: 2%;
+  width: 50%;
+  margin: 2% 25% 0% 25%;
+}
+
+#goldframecaptionmapJost > a:link {
+  color: #C0C0C0;
+}
+
+#goldframecaptionmapJost > a:visited {
+  color: #CD7F32;
+}
+
+#goldframecaptionmapJost > a:hover {
+  color: #B59410;
+}
+
+#goldframecaptionmapJost > a:active {
+  color: #f7e98e;
+}
+
 #ID {
   background-image: url(images/poolwater.jpg);
   border: 10px inset #5CA4CA;
   width: 1800;
   height: 1200px;
 }
+
 legend {
   color: #FCF798;
   background-color: #33638a;
 }
+
 .swimmingpoolID {
   border-style: none;
   border-top: 5px dotted #FF3131;
   width: 1800px;
 }
+
 ::-webkit-input-placeholder {
   color: #5CA4CA;
 }
+
 :-ms-input-placeholder {
   color: #5CA4CA;
 }
+
 ::placeholder {
   color: #5CA4CA;
 }
@@ -161,48 +219,58 @@ legend {
   width: 17em;
   box-shadow: 20px 13px 5px rgba(12, 160, 200, 0.7);
 }
+
 .divingboard label{
   background-color: #85C1E9;
 }
+
 #favmotor {
   cursor: pointer;
   height: 5em;
 }
+
 optgroup {
   color: #4682B4;
 }
+
 .motoption {
   color: #5CA4CA;
 }
+
 .motoption:hover {
   background-color: #5CA4CA;
   color: #FCF798;
 }
+
 input[type="submit"] {
   color: #FCF798;
   background-color : #74D2FF;
   border: solid #FCF798 thick;
   border-top-right-radius: 50%;
   border-bottom-right-radius: 50%;
-  padding: 12px 30px 12px 8px;
+  padding: 15px 30px 15px 8px;
   text-decoration: none;
   margin: 4px 2px;
   cursor: pointer;
   font-size: large;
 }
+
 input[type=submit]:hover {
   background-color: #5CA4CA;
   color: #FCF798;
 }
+
 input[type=submit]:active {
   background-color: #000080;
   color: #FCF798;
 }
+
 input[type=submit]:visited {
   background-color: #FCF798;
   color: #000080;
   border-color: #000080;
 }
+
 #dateform {
   color: #000080;
   background-image: url(images/hottub.jpg);
@@ -211,6 +279,7 @@ input[type=submit]:visited {
   width: 750px;
   height: 750px;
 }
+
 .checktainer {
   display: block;
   position: relative;
@@ -223,6 +292,7 @@ input[type=submit]:visited {
   -ms-user-select: none;
   user-select: none;
 }
+
 .checktainer input {
   position: absolute;
   opacity: 0;
@@ -230,6 +300,7 @@ input[type=submit]:visited {
   height: 0;
   width: 0;
 }
+
 .checkmark {
   position: absolute;
   top: 0;
@@ -237,25 +308,30 @@ input[type=submit]:visited {
   height: 12px;
   width: 30px;
   border-radius: 50%;
-  background-color: #74D2FF;
+  background-color: #66CDAA;
   border: solid medium #FCF798;
 }
+
 .checktainer:hover input ~ .checkmark {
   background-color: #5CA4CA;
   border: solid medium #FCF798;
 }
+
 .checktainer input:checked ~ .checkmark {
   background-color: #000080;
   border: solid medium #FCF798;
 }
+
 .checkmark:after {
   content: "";
   position: absolute;
   display: none;
 }
+
 .checktainer input:checked ~ .checkmark:after {
   display: block;
 }
+
 .checktainer .checkmark:after {
   left: 11px;
   top: 0px;
@@ -267,29 +343,41 @@ input[type=submit]:visited {
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
+
 #whiteheart {
   border: 10px #f7e98e outset;
 }
-input[type="datetime-local"], textarea {
-  color: #5CA4CA;
-  background-color : #FCF798;
-  border: solid #5CA4CA medium;
+
+.aquajog {
+  width: 275px;
+  border: solid medium;
 }
-.datelocation {
-  color: #5CA4CA;
-  background-color : #FCF798;
-  border: solid #5CA4CA medium;
+
+#datedatetime {
+  color: #CD5C5C;
+  background-color: #FFA07A;
+  border-color: #FF7F50;
 }
-input[type="URL"], textarea {
-  color: #5CA4CA;
-  background-color : #FCF798;
-  border: solid #5CA4CA medium;
+
+#datelocation {
+  color: #32CD32;
+  background-color: #98FB98;
+  border-color: #32CD32;
 }
-input[type="tel"], textarea {
-  color: #5CA4CA;
-  background-color : #FCF798;
-  border: solid #5CA4CA medium;
+
+#homepage {
+  color: #00CED1;
+  background-color: #AFEEEE;
+  border-color: #48D1CC;
+
 }
+
+#phone {
+  color: #66CDAA;
+  background-color: #7FFFD4;
+  border-color: #66CDAA;
+}
+
 #value {
   color: #FCF798;
   font-weight: 900;
@@ -299,6 +387,7 @@ input[type="tel"], textarea {
   width: 270px;
   height: 270px;
 }
+
 .buttontainer {
   display: block;
   position: relative;
@@ -319,30 +408,36 @@ input[type="tel"], textarea {
   height: 0;
   width: 0;
 }
+
 .buttmark {
   position: absolute;
   top: 0;
   left: 0;
   height: 30px;
   width: 15px;
-  background-color: #74D2FF;
+  background-color: #AFEEEE;
   border: solid medium #FCF798;
   border-radius: 50%;
 }
+
 .buttontainer:hover input ~ .buttmark {
-  background-color: #5CA4CA;
+  background-color: #48D1CC;
 }
+
 .buttontainer input:checked ~ .buttmark {
   background-color: #000080;
 }
+
 .buttmark:after {
   content: "";
   position: absolute;
   display: none;
 }
+
 .buttontainer input:checked ~ .buttmark:after {
   display: block;
 }
+
 .buttontainer .buttmark:after {
   top: 6px;
  left: 5px;
@@ -351,12 +446,13 @@ input[type="tel"], textarea {
  border-radius: 50%;
  background: #FCF798;
 }
+
 #why {
-  color: #5CA4CA;
+  color: #FFD700;
   background-color : #FCF798;
-  border: solid #5CA4CA medium;
-  width: 17em;
+  border-color: #FFFF00;
 }
+
 #formfillprogress {
   border: solid #5CA4CA medium;
   height: 26px;
@@ -397,6 +493,7 @@ pre {
   font-size: 26px;
   font-weight: bolder;
 }
+
 #angular {
   font-family: Cascadia Mono,"courier new";
   color: grey;
@@ -404,6 +501,7 @@ pre {
   padding: 1px;
   font-size: 100%;
 }
+
 code {
   font-family: Cascadia Mono,"courier new";
   color: #3498DB;
@@ -411,47 +509,58 @@ code {
   padding: 1px;
   font-size: 100%;
 }
+
 #motoquizbody {
   color: #C19A6B;
   font-family: 'Rubik Dirt', cursive;
   font-size:20px
 }
+
 #ThreeEnduro {
   border: 10px dashed #C19A6B;
   border-radius: 144px;
   width: 1024; 
   height: 288;
 }
+
 #Yamaha {
   font-family: 'Bayon', sans-serif;
 }
+
 s {
   text-decoration: line-through red 0.1em;
 }
+
 #DT250D {
   width: 525px;
   height: 700px;
 }
+
 #YamahaPinUp {
   width: 610px;
   height: 406px;
 }
+
 #HondaDual {
   width: 800px;
   height: 1050px;
 }
+
 #XLX250R {
   width: 800px;
   height: 1050px;
 }
+
 .enduro-honda {
   font-family: 'Fraunces', serif;
   color: #D81813;
 }
+
 #hondah2 {
   color: #FBFCFC;
   text-decoration: underline 3px #9FE2BF;
 }
+
  .honda {
   margin: 10px;
   padding: 30px;
@@ -459,15 +568,19 @@ s {
   color:#FFFFFF;
   border: 10px solid  #00256b;
 }
+
 #honda-h3 {
   padding-left: 28px;
 }
+
 #honda-img {
   padding-left: 28px;   
 }
+
 .honda > audio {
   padding-left: 32px;
 }
+
 .CRF {
   margin: 15px;
   padding: 15px;
@@ -475,12 +588,14 @@ s {
   color: #00256b;
   border: 8px solid  #00256b;
 }
+
 .CRF > h3::first-line {
   color: #B81B0E;
   font-size: xx-large;
   font-style: italic;
   text-decoration: underline overline #00256b 8px; 
 }
+
 .CRF1 {
   font-family: 'Fraunces', serif;
   margin: 15px;
@@ -489,21 +604,25 @@ s {
   color: #00256b;
   border: 8px solid #00256b;
 }
+
 .CRF1 > h3::first-letter {
   color: #B81B0E;
   font-size: xx-large;
   font-style: italic;
 }
+
 #Honda300L {
   width: 900px;
   height: 600px;
   margin-left: 10px;
 }
+
 #Honda300Rally {
   width: 900px;
   height: 600px;
   margin-left: 58px; 
 }
+
 #KTMbody {
   font-family: 'Notable', sans-serif;
   font-style: italic;
@@ -513,6 +632,7 @@ s {
                2px 2px 0 #DE5E32,
                -2px 2px 0 #DE5E32;
 }
+
 #KTMad {
   width: 500px;
   height: 650px; 
