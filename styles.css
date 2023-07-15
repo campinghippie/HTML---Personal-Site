@@ -3,6 +3,14 @@
   color: #FCF798;
 }
 
+#indexheader {
+  font-family: 'Neonderthaw', cursive;
+  font-size: 50px;
+  text-shadow: 0 0 45px #FFFF33;
+  text-align: center;
+  padding: 10px;
+}
+
 body {
   font-family: 'Heebo', sans-serif;
   font-size: 18px;
@@ -10,12 +18,20 @@ body {
   background-color: #85C1E9;
 }
 
+#profpicsection {
+  float: left;
+  height: 1000px;
+  width: 50%;
+}
+
 figure {
   display: inline-block;
-  border: 10px #f7e98e outset;
+  border: 10px outset #f7e98e;
+  border-image-width: 30px;
+   outset;
   padding:30px;
   margin: auto;
-  background-color: #ffd700;
+  background-image: url(images/goldleaf.jpeg);
 }
 
 #profpic {
@@ -28,7 +44,7 @@ figure {
 #goldframecaptionprofpic {
   font-family: 'IM Fell DW Pica SC', serif;
   font-weight: bold;
-  color: #B59410;
+  color: #a18208;
   text-align: center;
   border: 3px #f7e98e outset;
   border-radius: 50%;
@@ -36,15 +52,11 @@ figure {
   margin: 2% 40% 0% 40%;
 }
 
-#tencom {
-  display: inline-block;
+#devprofile {
+  float: left;
+  width: 50%;
+  height: 1000px;
 }
-h1 {
-  font-family: 'Neonderthaw', cursive;
-  font-size: 78px;
-  text-shadow: 0 0 45px #FFFF33;
-}
-
 .neon {
   text-shadow: 0 0 30px #FFFF33;
   font-family: 'Neonderthaw', cursive;
