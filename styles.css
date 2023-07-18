@@ -4,6 +4,7 @@
 }
 
 #indexheader {
+  color: rgba(255,255,224, 0.8);
   font-family: 'Neonderthaw', cursive;
   font-size: 50px;
   text-shadow: 0 0 45px #FFFF33;
@@ -13,25 +14,21 @@
 
 body {
   font-family: 'Heebo', sans-serif;
-  font-size: 18px;
+  font-size: 20px;
   color: #FBFCFC;
   background-color: #85C1E9;
 }
 
-#profpicsection {
+.profile {
   float: left;
-  height: 1000px;
-  width: 50%;
+  margin-left: 7.5%;
 }
 
 figure {
-  display: inline-block;
   border: 10px outset #f7e98e;
-  border-image-width: 30px;
-   outset;
-  padding:30px;
-  margin: auto;
+  padding: 30px;
   background-image: url(images/goldleaf.jpeg);
+  margin: -3px;
 }
 
 #profpic {
@@ -51,17 +48,7 @@ figure {
   width: 20%;
   margin: 2% 40% 0% 40%;
 }
-
-#devprofile {
-  float: left;
-  width: 50%;
-  height: 1000px;
-}
-.neon {
-  text-shadow: 0 0 30px #FFFF33;
-  font-family: 'Neonderthaw', cursive;
-}
-
+ 
 .tooltip {
   position: relative;
   display: inline-block; 
@@ -88,7 +75,7 @@ figure {
 
 ::marker {
   color: #00256b; 
-  font-size: 18px;
+  font-size: 20px;
 }
 
 hr {
@@ -96,6 +83,29 @@ hr {
   border-top: 10px dotted #5CA4CA;
   border-width: 10%;
   width: 5%;
+}
+
+#education {
+  clear: left;
+}
+
+#edulist {
+  list-style: none;
+  text-align: center;
+}
+
+#edulist > li::before {
+  content: '';
+  display: inline-block;
+  width: 23px;
+  height: 23px;
+  background-image: url(images/temple.svg);
+  text-decoration: underline;
+}
+
+.neon {
+  text-shadow: 0 0 30px #FFFF33;
+  font-family: 'Neonderthaw', cursive;
 }
 
 a:link {
@@ -525,7 +535,7 @@ code {
 #motoquizbody {
   color: #C19A6B;
   font-family: 'Rubik Dirt', cursive;
-  font-size:20px
+  font-size:20px;
 }
 
 #ThreeEnduro {
@@ -543,14 +553,43 @@ s {
   text-decoration: line-through red 0.1em;
 }
 
+.YamUberbox {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: end;
+  padding: 20px;
+}
+
+.Yambox {
+  box-sizing: border-box;
+  width: 33.33%;
+  margin: 10px;
+}
+
+.YamSubbox1 {
+  
+  
+}
 #DT250D {
-  width: 525px;
-  height: 700px;
+  width: 550px;
+  height: 790px;
+  border: 3px outset silver;
+}
+
+#DT175D {
+  width: 550px;
+  height: 790px;
+  border: 3px outset silver;
 }
 
 #YamahaPinUp {
   width: 610px;
   height: 406px;
+  border: 3px outset silver;
+}
+
+.Yamfooter {
+  text-align: center;
 }
 
 #HondaDual {
