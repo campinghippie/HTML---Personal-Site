@@ -29,6 +29,7 @@ figure {
   padding: 30px;
   background-image: url(images/goldleaf.jpeg);
   margin: -3px;
+  overflow: hidden;
 }
 
 #profpic {
@@ -567,7 +568,8 @@ s {
 }
 
 .YamSubbox1 {
-  
+  margin-bottom: 160px;
+  text-align: center;
   
 }
 #DT250D {
@@ -593,11 +595,13 @@ s {
 }
 
 #HondaDual {
+  border: 3px outset  silver;
   width: 800px;
   height: 1050px;
 }
 
 #XLX250R {
+  border: 3px outset  silver;
   width: 800px;
   height: 1050px;
 }
@@ -663,12 +667,14 @@ s {
 }
 
 #Honda300L {
+  border: 3px outset  silver;
   width: 900px;
   height: 600px;
   margin-left: 10px;
 }
 
 #Honda300Rally {
+  border: 3px outset  silver;
   width: 900px;
   height: 600px;
   margin-left: 58px; 
@@ -677,16 +683,23 @@ s {
 #KTMbody {
   font-family: 'Notable', sans-serif;
   font-style: italic;
-  color: #FBFCFC;
+  color: black;
   text-shadow: -2px -2px 0 #DE5E32,
                2px 2px 0 #DE5E32,
                2px 2px 0 #DE5E32,
                -2px 2px 0 #DE5E32;
 }
 
-#KTMad {
+#KTMad1 {
+  border: 3px outset  silver;
   width: 500px;
   height: 650px; 
+}
+
+#KTMad2 {
+  border: 4px outset  #DE5E32;
+  width: 1200px;
+  height: 628px;
 }
 
 
