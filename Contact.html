@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+  
 
 <head>
   <meta charset="utf-8">
@@ -16,29 +17,40 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 
+
 <body id="contactbody">
+
+
   <adress>
-  <p>Joost may know, ask @ the bar</p>
-  <dl>
-    <dt>Soggy Dollar Bar</dt>
-    <dd>home of the Painkiller</dd>
-    <dt>Jost van Dyke</dt>
-    <dd>a sunny place for shady people</dd>
-  </dl>
-  <p>BVI</p>
-  </adress><br>
+    <p>Joost may know, ask @ the bar</p>
+    <dl>
+      <dt>Soggy Dollar Bar</dt>
+      <dd>home of the Painkiller</dd>
+      <dt>Jost van Dyke</dt>
+      <dd>a sunny place for shady people</dd>
+    </dl>
+    <p>BVI</p>
+  </adress>
+
+  <br>
+
   <figure>
-  <iframe name="MapJost" id="MapJost" title="map of Jost Van Dyke, British Virgin Islands" 
+    <iframe name="MapJost" id="MapJost" title="map of Jost Van Dyke, British Virgin Islands" 
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d71867.97146633393!2d-64.83186173839312!3d18.472307073675065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c050b64db4c19d7%3A0xa524c69e8029cb07!2sJost%20Van%20Dyke!5e0!3m2!1snl!2snl!4v1681728151663!5m2!1snl!2snl"  
           allowfullscreen="true" loading="eager" referrerpolicy="no-referrer-when-downgrade">
-  </iframe>
-  <figcaption id="goldframecaptionmapJost"><a href="https://www.soggydollarradio.com/" target="MapJost" onclick="displayResult()">Click Caption for the Local Radio!</a></figcaption>
-  <script>
+    </iframe>
+    <figcaption id="goldframecaptionmapJost">
+      <a href="https://www.soggydollarradio.com/" target="MapJost" onclick="displayResult()">
+        Click Caption for the Local Radio!
+      </a>
+    </figcaption>
+    <script>
     function displayResult() {
       document.getElementById("goldframecaptionmapJost").innerHTML ="Soggy Dollar Radio";
     }
     </script>
   </figure>
+
   
   <br>
   <br>
@@ -51,6 +63,8 @@
   <br>
   <br>
   <br>
+
+
   <form id="contact" action="mailto:" method="post" enctype="text/plain">
     <fieldset id="ID">
       <legend><b>ID & Contact</b></legend>
@@ -64,7 +78,7 @@
       <hr class="swimmingpoolID">
       <label for="firstname">First name: </label><br>
         <input class="divingboard" id=firstname type="text" name="First name"><br><br>
-      <hr class="swimmingpoolID">
+        <hr class="swimmingpoolID">
       <label id="lastname">Last name: </label><br>
         <input class="divingboard" for="lastname" type="text" name="Last name"><br><br>
       <hr class="swimmingpoolID">
@@ -81,8 +95,7 @@
         <input class="divingboard" type="number" id="LuckyNumber" name="LuckyNumber" min="1"><br><br>
       <hr class="swimmingpoolID">
       <label for="message">Your Message :</label><br>
-        <textarea class="divingboard" id="message" name="Your Message" placeholder="Trust me..." rows="3"></textarea><br>
-      <br>
+        <textarea class="divingboard" id="message" name="Your Message" placeholder="Trust me..." rows="3"></textarea><br><br>
       <hr class="swimmingpoolID">
       <label for="favmotor">Your favorite motorcycle-type:<br>
       <select class="divingboard" name="favmotor" id="favmotor" form="contact" size="3" multiple required>
@@ -141,11 +154,15 @@
         <input type="submit" value="ship message">
     </fieldset>
   </form>
+
+
   <br>
   <br>
   <br>
   <br>
   <br>
+
+
     <form>
       <fieldset id="dateform">
         <legend><b>💙DateForm</b></legend>
@@ -196,7 +213,11 @@
           <input type="submit" value="send invitation">
       </fieldset>
     </form>
+
+
     <br>
+
+
     <form action="">
       <fieldset id="value">
        <legend><b>Opinion-Option</b></legend>
@@ -212,21 +233,27 @@
            <input type="radio" id="bad-website" name="website-rating" value="bad-website">
          <span class="buttmark"></span>
          <br>
-        
       </fieldset>
       <br>
       <input type="submit" value="Xpress to impress">
     </form>
+
+
     <label for="why">Why? </label><br>
         <input class="aquajog" id="why" type="text" name="U can't touch me..." readonly form="value" placeholder="U can't Touch me...."><br>
     <label for="formfillprogress">Form fill progress:</label>
     <progress id="formfillprogress" value="" max=""></progress>
   </div>
+
+
 </body>
+
+
 <footer>
   <q>It's more fun to be a pirate then to join the navy</q> Steve Jobs
   <br>
   <a href="index.html">Back to main page</a>
 </footer>
+
 
 </html>
