@@ -35,18 +35,18 @@
   <br>
 
   <figure>
-    <iframe name="MapJost" id="MapJost" title="map of Jost Van Dyke, British Virgin Islands" 
+    <iframe name="mapjost" id="mapjost" title="map of Jost Van Dyke, British Virgin Islands" 
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d71867.97146633393!2d-64.83186173839312!3d18.472307073675065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c050b64db4c19d7%3A0xa524c69e8029cb07!2sJost%20Van%20Dyke!5e0!3m2!1snl!2snl!4v1681728151663!5m2!1snl!2snl"  
           allowfullscreen="true" loading="eager" referrerpolicy="no-referrer-when-downgrade">
     </iframe>
-    <figcaption id="goldframecaptionmapJost">
-      <a href="https://www.soggydollarradio.com/" target="MapJost" onclick="displayResult()">
+    <figcaption id="goldframecaptionmapjost">
+      <a href="https://www.soggydollarradio.com/" target="mapjost" onclick="displayResult()">
         Click Caption for the Local Radio!
       </a>
     </figcaption>
     <script>
     function displayResult() {
-      document.getElementById("goldframecaptionmapJost").innerHTML ="Soggy Dollar Radio";
+      document.getElementById("goldframecaptionmapjost").innerHTML ="Soggy Dollar Radio";
     }
     </script>
   </figure>
@@ -66,38 +66,38 @@
 
 
   <form id="contact" action="mailto:" method="post" enctype="text/plain">
-    <fieldset id="ID">
+    <fieldset id="idform">
       <legend><b>ID & Contact</b></legend>
       <label for="salutation">Gender:<br>
-      <input class="divingboard" list="salutation" name="salutation" form="contact">
-      <datalist id="salutation">
+      <input id="salutation" class="divingboard" list="salutation" name="salutation" form="contact">
+      <datalist>
         <option value="Mrs."></option>
         <option value="Mr."></option>
       </datalist>
     </label>
-      <hr class="swimmingpoolID">
+      <hr class="hr-id">
       <label for="firstname">First name: </label><br>
         <input class="divingboard" id=firstname type="text" name="First name"><br><br>
-        <hr class="swimmingpoolID">
-      <label id="lastname">Last name: </label><br>
-        <input class="divingboard" for="lastname" type="text" name="Last name"><br><br>
-      <hr class="swimmingpoolID">
+        <hr class="hr-id">
+      <label for="lastname">Last name: </label><br>
+        <input class="divingboard" id="lastname" type="text" name="Last name"><br><br>
+      <hr class="hr-id">
       <label for="email">E-mail:</label><br>
-        <input class="divingboard" id="email" type="email" value="" name="your e-mail"><br><br>
-      <hr class="swimmingpoolID">
+        <input class="divingboard" id="email" type="email" value="" name="your e-mail" placeholder="&#9993;"><br><br>
+      <hr class="hr-id">
       <label for="birthday">Birthday:</label><br>
         <input class="divingboard" id="birthday" type="date"> <br><br>
-      <hr class="swimmingpoolID">
+      <hr class="hr-id">
       <label for="favcolor">Select your favorite color:</label><br>
         <input class="divingboard" type="color" id="favcolor" name="favcolor" value="#FFFFF0"><br><br>
-      <hr class="swimmingpoolID">
+      <hr class="hr-id">
       <label for="LuckyNumber">What is your Lucky Number?</label><br>
         <input class="divingboard" type="number" id="LuckyNumber" name="LuckyNumber" min="1"><br><br>
-      <hr class="swimmingpoolID">
+      <hr class="hr-id">
       <label for="message">Your Message :</label><br>
-        <textarea class="divingboard" id="message" name="Your Message" placeholder="Trust me..." rows="3"></textarea><br><br>
-      <hr class="swimmingpoolID">
-      <label for="favmotor">Your favorite motorcycle-type:<br>
+        <textarea class="divingboard" id="message" name="Your Message" placeholder="&#9998;Trust me..." rows="3"></textarea><br><br>
+      <hr class="hr-id">
+      <label for="favmotor"><span id="motofontsize">&#127949;</span>Your favorite motorcycle-type:<br>
       <select class="divingboard" name="favmotor" id="favmotor" form="contact" size="3" multiple required>
         <optgroup label="Standard">
           <option class="motoption" value="naked bike">Naked bike</option>
@@ -149,9 +149,9 @@
         </optgroup>
       </select>
       </label>
-      <br><br>
-      <hr class="swimmingpoolID">
-        <input type="submit" value="ship message">
+      <br>
+      <hr class="hr-id">
+        <input type="submit" value="&#9875; ship message">
     </fieldset>
   </form>
 
@@ -165,7 +165,7 @@
 
     <form>
       <fieldset id="dateform">
-        <legend><b>💙DateForm</b></legend>
+        <legend><b>DateForm</b></legend>
         <label for="clever" class="checktainer">Are you clever?
           <input type="checkbox" id="clever" name="clever" value="clever">
           <span class="checkmark"></span>
@@ -208,9 +208,9 @@
           <input class="aquajog" type="url" id="homepage" name="homepage"><br>
         </label>
         <label for="phone">Enter your phone number, so i can call you back:
-          <input class="aquajog" type="tel" id="phone" name="phone" placeholder="Camp, Peace & ......"><br><br>
+          <input class="aquajog" type="tel" id="phone" name="phone" placeholder="&#9978;, &#9774; & ......"><br>
         </label>
-          <input type="submit" value="send invitation">
+          <input type="submit" value="&#9875; send invitation">
       </fieldset>
     </form>
 
@@ -235,7 +235,7 @@
          <br>
       </fieldset>
       <br>
-      <input type="submit" value="Xpress to impress">
+      <input type="submit" value="&#9875; xpress to impress">
     </form>
 
 

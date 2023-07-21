@@ -168,12 +168,12 @@ datalist {
   font-weight: 900;
 }
 
-#MapJost {
+#mapjost {
   width: 1000px;
   height: 500px;
 }
 
-#goldframecaptionmapJost {
+#goldframecaptionmapjost {
   font-family: 'IM Fell DW Pica SC', serif;
   font-weight: bold;
   color: #B59410;
@@ -184,27 +184,27 @@ datalist {
   margin: 2% 25% 0% 25%;
 }
 
-#goldframecaptionmapJost > a:link {
+#goldframecaptionmapjost > a:link {
   color: #C0C0C0;
 }
 
-#goldframecaptionmapJost > a:visited {
+#goldframecaptionmapjost > a:visited {
   color: #CD7F32;
 }
 
-#goldframecaptionmapJost > a:hover {
+#goldframecaptionmapjost > a:hover {
   color: #B59410;
 }
 
-#goldframecaptionmapJost > a:active {
+#goldframecaptionmapjost > a:active {
   color: #f7e98e;
 }
 
-#ID {
+#idform {
   background-image: url(images/poolwater.jpg);
   border: 10px inset #5CA4CA;
   width: 1800;
-  height: 1200px;
+  height: 1250px;
 }
 
 legend {
@@ -212,7 +212,7 @@ legend {
   background-color: #33638a;
 }
 
-.swimmingpoolID {
+.hr-id {
   border-style: none;
   border-top: 5px dotted #FF3131;
   width: 1800px;
@@ -248,6 +248,10 @@ legend {
 #favmotor {
   cursor: pointer;
   height: 5em;
+}
+
+#motofontsize {
+  font-size: 35px;
 }
 
 optgroup {
@@ -485,19 +489,14 @@ details {
   background-color: #FFD801;
   box-shadow: 6px 6px 0 #EE6B2B;
   border-radius: 25px 25px 25px 25px;
-  font: 
-     "Open Sans",
-    Calibri,
-    sans-serif;
-    font-weight: 800;
-  width: 620px;
+  font: "Open Sans", Calibri, sans-serif;
+  font-weight: 800;
+  width: 98%;
 }
 
 details > summary {
-  text-align: center;
   color: #EE6B2B;
   padding: 2px 6px;
-  width: 38em;
   border: none;
   cursor: pointer;
   list-style: none;
@@ -537,14 +536,14 @@ code {
   font-size:20px;
 }
 
-#ThreeEnduro {
+#three-enduro {
   border: 10px dashed #C19A6B;
   border-radius: 144px;
   width: 1024; 
   height: 288;
 }
 
-#Yamaha {
+#yamaha {
   font-family: 'Bayon', sans-serif;
 }
 
@@ -552,53 +551,53 @@ s {
   text-decoration: line-through red 0.1em;
 }
 
-.YamUberbox {
+.yamuberbox {
   display: flex;
   flex-wrap: nowrap;
   align-items: end;
   padding: 20px;
 }
 
-.Yambox {
+.yambox {
   box-sizing: border-box;
   width: 33.33%;
   margin: 10px;
 }
 
-.YamSubbox1 {
+.yamsubbox1 {
   margin-bottom: 160px;
   text-align: center;
   
 }
-#DT250D {
+#dt250d {
   width: 550px;
   height: 790px;
   border: 3px outset silver;
 }
 
-#DT175D {
+#dt175d {
   width: 550px;
   height: 790px;
   border: 3px outset silver;
 }
 
-#YamahaPinUp {
+#yamahapinup {
   width: 610px;
   height: 406px;
   border: 3px outset silver;
 }
 
-.Yamfooter {
+.yamfooter {
   text-align: center;
 }
 
-#HondaDual {
+#hondadual {
   border: 3px outset  silver;
   width: 800px;
   height: 1050px;
 }
 
-#XLX250R {
+#xlx250r {
   border: 3px outset  silver;
   width: 800px;
   height: 1050px;
@@ -614,7 +613,7 @@ s {
   text-decoration: underline 3px #9FE2BF;
 }
 
- .honda {
+.honda {
   margin: 10px;
   padding: 30px;
   background-color: #B81B0E;
@@ -634,7 +633,7 @@ s {
   padding-left: 32px;
 }
 
-.CRF {
+.crf {
   margin: 15px;
   padding: 15px;
   background-color: #FFFFFF;
@@ -642,14 +641,14 @@ s {
   border: 8px solid  #00256b;
 }
 
-.CRF > h3::first-line {
+.crf > h3::first-line {
   color: #B81B0E;
   font-size: xx-large;
   font-style: italic;
   text-decoration: underline overline #00256b 8px; 
 }
 
-.CRF1 {
+.crf1 {
   font-family: 'Fraunces', serif;
   margin: 15px;
   padding: 15px;
@@ -658,27 +657,27 @@ s {
   border: 8px solid #00256b;
 }
 
-.CRF1 > h3::first-letter {
+.crf1 > h3::first-letter {
   color: #B81B0E;
   font-size: xx-large;
   font-style: italic;
 }
 
-#Honda300L {
+#honda300L {
   border: 3px outset  silver;
   width: 900px;
   height: 600px;
   margin-left: 10px;
 }
 
-#Honda300Rally {
+#honda300Rally {
   border: 3px outset  silver;
   width: 900px;
   height: 600px;
   margin-left: 58px; 
 }
 
-#KTMbody {
+#ktmbody {
   font-family: 'Notable', sans-serif;
   font-style: italic;
   color: black;
@@ -688,13 +687,13 @@ s {
                -2px 2px 0 #DE5E32;
 }
 
-#KTMad1 {
+#ktmad1 {
   border: 3px outset  silver;
   width: 500px;
   height: 650px; 
 }
 
-#KTMad2 {
+#ktmad2 {
   border: 4px outset  #DE5E32;
   width: 1200px;
   height: 628px;
