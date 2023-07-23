@@ -300,6 +300,35 @@ input[type=submit]:visited {
   border-color: #000080;
 }
 
+input[type="reset"] {
+  color: #FCF798;
+  background-color : #74D2FF;
+  border: solid #FCF798 thick;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  padding: 15px 30px 15px 8px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-size: large;
+}
+
+input[type=reset]:hover {
+  background-color: #5CA4CA;
+  color: #FCF798;
+}
+
+input[type=reset]:active {
+  background-color: #000080;
+  color: #FCF798;
+}
+
+input[type=reset]:visited {
+  background-color: #FCF798;
+  color: #000080;
+  border-color: #000080;
+}
+
 #dateform {
   color: #000080;
   background-image: url(images/hottub.jpg);
@@ -394,6 +423,19 @@ input[type=submit]:visited {
   border-color: #32CD32;
 }
 
+input[type="file"] {
+  display: none;
+}
+
+#css-pic-upload {
+  font-size: 12px;
+  color: #EDB525;
+  background-color : #FCF798;
+  padding: 0 70px 0 70px;
+  border: solid medium #FFD700;
+  cursor: pointer;
+}
+
 #homepage {
   color: #00CED1;
   background-color: #AFEEEE;
@@ -477,9 +519,9 @@ input[type=submit]:visited {
 }
 
 #why {
-  color: #FFD700;
+  color: #B81B0E;
   background-color : #FCF798;
-  border-color: #FFFF00;
+  border-color: #FFD700;
 }
 
 #formfillprogress {
