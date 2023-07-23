@@ -128,7 +128,11 @@ table {
   }
 
 th {
-  text-decoration: underline #FFFF33;
+  text-decoration: underline #39ff14;
+}
+
+td > mark {
+  background-color: #39ff14;
 }
 
 th, td {

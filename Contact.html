@@ -65,7 +65,7 @@
   <br>
 
 
-  <form id="contact" action="mailto:" method="post" enctype="text/plain">
+  <form id="contact" action="mailto:" method="post" enctype="text/plain" autocomplete="on">
     <fieldset id="idform">
       <legend><b>ID & Contact</b></legend>
       <label for="salutation">Gender:<br>
@@ -83,19 +83,19 @@
         <input class="divingboard" id="lastname" type="text" name="Last name"><br><br>
       <hr class="hr-id">
       <label for="email">E-mail:</label><br>
-        <input class="divingboard" id="email" type="email" value="" name="your e-mail" placeholder="&#9993;"><br><br>
+        <input class="divingboard" id="email" type="email" value="" name="e-mail" placeholder="&#9993;"><br><br>
       <hr class="hr-id">
       <label for="birthday">Birthday:</label><br>
-        <input class="divingboard" id="birthday" type="date"> <br><br>
+        <input class="divingboard" id="birthday" type="date" name="birthday"> <br><br>
       <hr class="hr-id">
       <label for="favcolor">Select your favorite color:</label><br>
         <input class="divingboard" type="color" id="favcolor" name="favcolor" value="#FFFFF0"><br><br>
       <hr class="hr-id">
-      <label for="LuckyNumber">What is your Lucky Number?</label><br>
-        <input class="divingboard" type="number" id="LuckyNumber" name="LuckyNumber" min="1"><br><br>
+      <label for="luckynumber">What is your Lucky Number?</label><br>
+        <input class="divingboard" type="number" id="luckynumber" name="luckynumber" min="1"><br><br>
       <hr class="hr-id">
       <label for="message">Your Message :</label><br>
-        <textarea class="divingboard" id="message" name="Your Message" placeholder="&#9998;Trust me..." rows="3"></textarea><br><br>
+        <textarea class="divingboard" id="message" name="message" placeholder="&#9998;Trust me..." rows="3"></textarea><br><br>
       <hr class="hr-id">
       <label for="favmotor"><span id="motofontsize">&#127949;</span>Your favorite motorcycle-type:<br>
       <select class="divingboard" name="favmotor" id="favmotor" form="contact" size="3" multiple required>
@@ -163,7 +163,7 @@
   <br>
 
 
-    <form>
+    <form autocomplete="off">
       <fieldset id="dateform">
         <legend><b>DateForm</b></legend>
         <label for="clever" class="checktainer">Are you clever?
@@ -190,12 +190,12 @@
           <input type="checkbox" id="camp" name="camp" value="camp">
           <span class="checkmark"></span>
         </label><br>
-        <label for="candidate" class="checktainer">Are you female and below 40 years old?
+        <label for="candidate" class="checktainer">Are you female?
           <input type="checkbox" id="candidate" name="candidate" value="candidate">
           <span class="checkmark"></span>
         </label><br>
         <label for="whiteheart">If you checked all of the checkboxes above; Do you want to date me? if yes, click here 
-          <input id=whiteheart type="image" src="images/white-heart.jpg" alt="yes, date!" width="40"height="40"><br>
+          <input id=whiteheart type="image" name="yesdate" src="images/white-heart.jpg" alt="yes, date!" width="40"height="40"><br>
           <span class="checkmark"></span>
         </label>
         <label for="datedatetime">date-date and time:
@@ -218,19 +218,19 @@
     <br>
 
 
-    <form action="">
+    <form action="" autocomplete="off">
       <fieldset id="value">
        <legend><b>Opinion-Option</b></legend>
          <label for="good-website"  class="buttontainer">good website 🙂
-           <input type="radio" id="good-website" name="website-rating" value="good-website">
+           <input type="radio" id="good-website" name="website-rating-good" value="good-website">
          <span class="buttmark"></span>
          </label><br>
          <label for="mediocre-website"  class="buttontainer">mwah...😐
-           <input type="radio" id="mediocre-website" name="website-rating" value="mediocre-website">
+           <input type="radio" id="mediocre-website" name="website-rating-mediocre" value="mediocre-website">
          <span class="buttmark"></span>
          </label><br>
          <label for="bad-website" class="buttontainer">bad website 🙁
-           <input type="radio" id="bad-website" name="website-rating" value="bad-website">
+           <input type="radio" id="bad-website" name="website-rating-bad" value="bad-website">
          <span class="buttmark"></span>
          <br>
       </fieldset>
@@ -250,9 +250,12 @@
 
 
 <footer>
-  <q>It's more fun to be a pirate then to join the navy</q> Steve Jobs
+  
+
   <br>
   <a href="index.html">Back to main page</a>
+
+
 </footer>
 
 
