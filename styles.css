@@ -164,6 +164,8 @@ datalist {
 }
 
 #contactbody {
+  width: 1900px;
+  margin-left: 0px;
   font-family: 'Heebo', sans-serif;
   }
 
@@ -531,13 +533,13 @@ input[type="file"] {
 }
 
 #sauna {
-  width: 2000px;
+  width: 1900px;
   height: 846px;
   background-image: url(images/sauna2000x846.png);
 }
 
 #locationbtn {
-  Font-size: 20px;
+  Font-size: 25px;
   background: url(images/zoutkristal-300x300.jpg);
   width: 215px;
   height: 215px;
