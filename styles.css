@@ -208,7 +208,7 @@ datalist {
   background-image: url(images/poolwater.jpg);
   border: 10px inset #5CA4CA;
   width: 1800;
-  height: 1250px;
+  height: 1270px;
 }
 
 legend {
@@ -530,6 +530,19 @@ input[type="file"] {
   width: 30%;
 }
 
+#sauna {
+  width: 2000px;
+  height: 846px;
+  background-image: url(images/sauna2000x846.png);
+}
+
+#locationbtn {
+  Font-size: 20px;
+  background: url(images/zoutkristal-300x300.jpg);
+  width: 215px;
+  height: 215px;
+}
+
 details {
   color: #EE6B2B;
   background-color: #FFD801;
@@ -590,6 +603,7 @@ code {
 }
 
 #yamaha {
+  color: #0000ff;
   font-family: 'Bayon', sans-serif;
 }
 
@@ -726,11 +740,11 @@ s {
 #ktmbody {
   font-family: 'Notable', sans-serif;
   font-style: italic;
-  color: black;
-  text-shadow: -2px -2px 0 #DE5E32,
-               2px 2px 0 #DE5E32,
-               2px 2px 0 #DE5E32,
-               -2px 2px 0 #DE5E32;
+  color: #DE5E32;
+  text-shadow: -1px -1px 0 black,
+               1px 1px 0 black,
+               1px 1px 0 black,
+               -1px 1px 0 black;
 }
 
 #ktmad1 {
@@ -744,5 +758,9 @@ s {
   width: 1200px;
   height: 628px;
 }
+
+
+
+
 
 

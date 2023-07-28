@@ -8,6 +8,7 @@
   <meta name="keywords" content="contact, adress, Joost van Lierop">
   <meta name="author" content="Joost van Lierop" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#85C1E9">
   <title>contact details Joost</title>
   <link rel="icon" href="images/envelope-favicon.ico" sizes="any">
   <link rel="icon" href="images/envelope-favicon.svg" type="image/svg+xml">
@@ -68,11 +69,12 @@
   <form id="contact" action="mailto:" method="post" enctype="text/plain" autocomplete="on">
     <fieldset id="idform">
       <legend><b>Data</b></legend>
-      <label for="salutation">Gender:<br>
-      <input id="salutation" class="divingboard" list="salutation" name="salutation" form="contact">
-      <datalist>
+      <label for="salutation">Preferred salutation:<br>
+      <input  class="divingboard" list="salutation" name="salutation" form="contact">
+      <datalist id="salutation">
         <option value="Mrs."></option>
         <option value="Mr."></option>
+        <option value="Mx."></option>
       </datalist>
       </label>
       <hr class="hr-id">
@@ -98,7 +100,7 @@
         <textarea class="divingboard" id="message" name="message" placeholder="&#9998;Trust me..." maxlenght="10000"></textarea><br><br>
       <hr class="hr-id">
       <label for="favmotor"><span id="motofontsize">&#127949;</span>Your favorite motorcycle-type:<br>
-      <select class="divingboard" name="favmotor" id="favmotor" form="contact" size="3" multiple required>
+      <select class="divingboard" name="favmotor" id="favmotor" form="contact" size="3" multiple required autofocus>
         <optgroup label="Standard">
           <option class="motoption" value="naked bike">Naked bike</option>
           <option class="motoption" value="roadster">Roadster</option>
@@ -164,7 +166,7 @@
   <br>
 
 
-    <form autocomplete="off">
+    <form autocomplete="on">
       <fieldset id="dateform">
         <legend><b>Date</b></legend>
         <label for="clever" class="checktainer">Are you clever?
@@ -224,7 +226,7 @@
     <br>
 
 
-    <form action="" autocomplete="off">
+    <form id="opinion" action="" autocomplete="off">
       <fieldset id="value">
        <legend><b>Opinion-Option</b></legend>
          <label for="good-website"  class="buttontainer">good website 🙂
@@ -247,10 +249,59 @@
 
 
     <label for="why">Why? </label><br>
-        <input class="aquajog" id="why" type="text" name="U can't touch me..." form="value" maxlenght="10000"
-         placeholder="improval is better then approval..."><br>
-    <label for="formfillprogress">Form fill progress:</label>
-    <progress id="formfillprogress" value="50" max="100"></progress>
+        <input class="aquajog" id="why" type="text" name="U can't touch me..." form="opinion" maxlenght="10000"
+         placeholder="improval is better then approval..."><br><br><br><br>
+    
+  </div>
+
+
+  <div id=sauna>
+    <h2>Data-Sauna</h2>
+
+    <p>Dear visitor, here in the data-sauna area, you will be asked to give privacy-sensitive data away,
+     hence i will ask you for permision first, nothing is obliged!</p>
+    <p>Please be aware of condition VI of the fine print, down below on the main page.</p>
+    <p>Touch/click the hot stones to get your coordinates, and, if you are moving, watch them change!</p>
+
+<button id="locationbtn" onclick="getLocation()">press here &#8987</button>
+
+<p id="demo"></p>
+
+<script>
+var x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.watchPosition(showPosition, showError);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+}
+
+function showError(error) {
+  switch(error.code) {
+    case error.PERMISSION_DENIED:
+      x.innerHTML = "User denied the request for Geolocation."
+      break;
+    case error.POSITION_UNAVAILABLE:
+      x.innerHTML = "Location information is unavailable."
+      break;
+    case error.TIMEOUT:
+      x.innerHTML = "The request to get user location timed out."
+      break;
+    case error.UNKNOWN_ERROR:
+      x.innerHTML = "An unknown error occurred."
+      break;
+  }
+}
+</script>
+
+
   </div>
 
 
@@ -258,6 +309,10 @@
 
 
 <footer>
+
+
+  <label for="formfillprogress">Form fill progress:</label>
+    <progress id="formfillprogress" value="50" max="100"></progress>
   
 
   <br>
